@@ -1,0 +1,33 @@
+@font-face {
+  font-family: "poppins";
+  font-style: "regular";
+  font-weight: 400;
+  font-display: swap;
+  src: url("~/assets/fonts/Poppins-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "poppins";
+  font-style: "medium";
+  font-weight: 500;
+  font-display: swap;
+  src: url("~/assets/fonts/Poppins-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "poppins";
+  font-style: "bold";
+  font-weight: 700;
+  font-display: swap;
+  src: url("~/assets/fonts/Poppins-Bold.ttf") format("truetype");
+}
+
+html {
+  font-family: "poppins";
+  background-color: #131313;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+}

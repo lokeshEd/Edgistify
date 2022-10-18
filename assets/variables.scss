@@ -1,0 +1,13 @@
+// Ref: https://github.com/nuxt-community/vuetify-module#customvariables
+//
+// The variables you want to modify
+// $font-size-root: 20px;
+
+$switch-thumb-dense-width: 8px;
+$switch-thumb-dense-height: 8px;
+$switch-track-dense-inset-height: 14px;
+$switch-track-dense-inset-width: 28px;
+$switch-dirty-offset-x: 12px;
+$switch-track-dense-top: calc(50% - 10px);
+$switch-thumb-top: calc(50% - 7px);
+$switch-track-inset-opacity: 1;
