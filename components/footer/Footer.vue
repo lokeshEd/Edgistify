@@ -39,8 +39,28 @@
           </div>
         </div>
         <div class="news-letter-signup-container">
-          <span>Sign up to our newsletter to stay updated about us.</span>
-          <!-- <v-input label="Company/brand or your e-mail"></v-input> -->
+          <div>
+            <span>Sign up to our newsletter to stay updated about us.</span>
+          </div>
+          <div class="input-container">
+            <v-text-field
+              solo
+              flat
+              dense
+              placeholder="Company/brand or your e-mail"
+              style="max-width: 300px; height: 40px; border-radius: 3px 0 0 3px; font-size: 13px;"
+              hide-spin-buttons
+            />
+            <v-btn
+              dark
+              width="80px"
+              height="38px"
+              depressed
+              color="#00A699"
+              style="border-radius: 0 3px 3px 0; margin-left: 1px; font-size: 13px;"
+              >Submit</v-btn
+            >
+          </div>
         </div>
         <div class="help-container">
           <span>Privacy Policy</span>
@@ -136,7 +156,12 @@
         display: flex;
         width: 100%;
         height: 30%;
-        // align-items: center;
+        flex-direction: column;
+
+        .input-container {
+          margin-top: .5rem;
+          display: flex;
+        }
       }
       .help-container {
         display: flex;

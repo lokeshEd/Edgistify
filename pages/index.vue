@@ -1,8 +1,12 @@
 <template>
-  <div class="homepage-container">
-    <h1></h1>
-  </div>
+  <div class="homepage-container"></div>
 </template>
+
+<script>
+export default {
+  data: () => {},
+};
+</script>
 
 <style lang="scss" scoped>
 .homepage-container {
@@ -12,7 +16,7 @@
   align-items: center;
   justify-content: center;
   height: 80vh;
-  background-color: #F3F3F5;
+  background-color: #f3f3f5;
 
   h1 {
     font-size: 40px;
