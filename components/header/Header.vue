@@ -19,7 +19,7 @@
   width: 100%;
   height: 70px;
   align-items: center;
-  padding: 0 2rem;
+  padding: 0 5rem;
   justify-content: space-between;
   background-color: #161616;
   //   border: 1px solid grey;
@@ -35,7 +35,6 @@
     justify-content: space-between;
     width: 70%;
     list-style-type: none;
-
     .menu-item {
       font-weight: 500;
       font-size: 12px;
