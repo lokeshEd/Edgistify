@@ -57,7 +57,7 @@
               height="38px"
               depressed
               color="#00A699"
-              style="border-radius: 0 3px 3px 0; margin-left: 1px; font-size: 13px;"
+              style="border-radius: 0 3px 3px 0; margin-left: 1px; font-size: 13px; text-transform: capitalize;"
               >Submit</v-btn
             >
           </div>

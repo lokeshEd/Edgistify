@@ -57,6 +57,13 @@
 
         border-radius: 4px;
         background-color: #00a699;
+
+        &:hover {
+          width: 120px;
+          height: 32px;
+          color: #000;
+          font-size: 12.1px;
+        }
       }
     }
   }
