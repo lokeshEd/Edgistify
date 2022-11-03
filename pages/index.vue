@@ -12,9 +12,8 @@
       <div class="description-container">
         <div class="description">
           <p>
-            We are an End to End tech driven supply chain & logistics management
-            company. We manage warehousing, First Mile, Order fulfillment and
-            Last Mile for clients across industries at Pan-India locations.
+            Edgistify offers End to End supply chain and logistics solutions for
+            B2B and B2C companies across different industries PAN India
           </p>
         </div>
       </div>
@@ -47,11 +46,7 @@
   </div>
 </template>
 
-<script>
-export default {
-  data: () => {},
-};
-</script>
+<script></script>
 
 <style lang="scss" scoped>
 .homepage-container {
@@ -94,11 +89,12 @@ export default {
         padding: 0 4rem;
 
         h1 {
-          font-size: 90px;
+          font-size: calc(3rem + 2.5vw);
           font-weight: 300;
 
           b {
-            font-weight: 600;
+            font-weight: 700;
+            font-size: calc(3rem + 2.5vw);
 
             span {
               color: #00a699;
