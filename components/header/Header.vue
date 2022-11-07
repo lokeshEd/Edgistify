@@ -33,8 +33,10 @@
         >
           Careers
         </li>
-        <li class="menu-item button secondry">Try WMS</li>
-        <li class="menu-item button primary">Contact Us</li>
+        <li class="menu-item button secondry">
+          <span>Try<b> WMS</b></span>
+        </li>
+        <li class="menu-item button primary"><b>Contact Us</b></li>
       </ul>
     </div>
     <div class="dropdown" :class="{ hidden: !showDropdown }">
@@ -102,7 +104,7 @@
   .header {
     display: flex;
     align-items: center;
-    height: 70px;
+    height: 98px;
     padding: 0 5rem;
     justify-content: space-between;
     background-color: #161616;
@@ -160,21 +162,21 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
     width: 70%;
     list-style-type: none;
     .menu-item {
       font-weight: 500;
-      font-size: 12px;
-      line-height: 15.12px;
+      font-size: 16px;
+      line-height: 20px;
       // text-transform: uppercase
       cursor: pointer;
       transition: all 0.3s ease;
       color: #8d8d8d;
+      margin-left: 60px;
 
       &:hover {
-        font-size: 12.1px;
-        color: #00a699;
+        color: #fff;
       }
 
       &.selected {
@@ -183,15 +185,18 @@
 
       &.button {
         display: flex;
-        width: 120px;
-        height: 30px;
+        height: 42px;
         align-items: center;
         justify-content: center;
         border: 1px solid #00a699;
         border-radius: 40px;
         color: #fff;
+        padding: 10px 40px;
+        font-family: "NotoSerif";
+        
         &.primary {
           background-color: #00a699;
+          margin-left: 22px;
 
           &:hover {
             background-color: #008b80;
@@ -200,12 +205,16 @@
         &.secondry {
           border: 1px solid #fff;
           background-color: transparent;
+          margin-left: 72px;
 
           &:hover {
             border-color: #008b80;
           }
-        }
 
+          b {
+            font-family: "Outfit";
+          }
+        }
       }
     }
   }

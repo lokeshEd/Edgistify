@@ -1,29 +1,69 @@
 @font-face {
-  font-family: "poppins";
-  font-style: "regular";
+  font-family: "Outfit";
+  font-style: "light";
+  font-weight: 100;
+  font-display: swap;
+  src: url("~/assets/fonts/Outfit-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Outfit";
+  font-style: "medium";
   font-weight: 400;
   font-display: swap;
-  src: url("~/assets/fonts/Poppins-Regular.ttf") format("truetype");
+  src: url("~/assets/fonts/Outfit-Medium.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "poppins";
-  font-style: "medium";
+  font-family: "Outfit";
+  font-style: "regular";
   font-weight: 500;
   font-display: swap;
-  src: url("~/assets/fonts/Poppins-Medium.ttf") format("truetype");
+  src: url("~/assets/fonts/Outfit-Regular.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "poppins";
-  font-style: "bold";
-  font-weight: 700;
+  font-family: "Outfit";
+  font-style: "semiBold";
+  font-weight: 600;
   font-display: swap;
-  src: url("~/assets/fonts/Poppins-Bold.ttf") format("truetype");
+  src: url("~/assets/fonts/Outfit-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "NotoSerif";
+  font-style: "light";
+  font-weight: 100;
+  font-display: swap;
+  src: url("~/assets/fonts/NotoSerif-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "NotoSerif";
+  font-style: "medium";
+  font-weight: 400;
+  font-display: swap;
+  src: url("~/assets/fonts/NotoSerif-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "NotoSerif";
+  font-style: "regular";
+  font-weight: 500;
+  font-display: swap;
+  src: url("~/assets/fonts/NotoSerif-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "NotoSerif";
+  font-style: "semiBold";
+  font-weight: 600;
+  font-display: swap;
+  src: url("~/assets/fonts/NotoSerif-SemiBold.ttf") format("truetype");
 }
 
 html {
-  font-family: "poppins";
+  font-family: "Outfit";
+  font-weight: 400;
   background-color: #131313;
   color: #fff;
   margin: 0;
