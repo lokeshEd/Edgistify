@@ -41,7 +41,13 @@
           <span>customers</span>
         </div>
       </div>
-      <div class="description-container"></div>
+      <div class="description-container">
+        <v-img
+        src="/Rectangle 84.png"
+        contain
+      >
+      </v-img>
+      </div>
     </div>
   </div>
 </template>
@@ -109,11 +115,10 @@
       height: 100%;
       align-items: center;
       justify-content: center;
-
+      
       .description {
         display: flex;
         width: 100%;
-        height: 40;
         align-items: center;
         justify-content: center;
         padding: 0 4rem;

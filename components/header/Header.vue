@@ -1,22 +1,90 @@
 <template>
   <div class="header-container" :class="{ hidden: !showNavbar }">
-    <div class="logo-container">
-      <v-img
-        src="/Edgistify.png"
-        height="30px"
-        contain
-      >
-      </v-img>
+    <div class="header">
+      <div class="logo-container">
+        <v-img src="/Edgistify.png" height="30px" contain> </v-img>
+      </div>
+      <ul class="menu-container">
+        <li
+          class="menu-item"
+          :class="{ selected: toggleTab === 'Solution' && showDropdown }"
+          @click="() => onToggleDropdown('Solution')"
+        >
+          Solution
+        </li>
+        <li
+          class="menu-item"
+          :class="{ selected: toggleTab === 'Company' && showDropdown }"
+          @click="() => onToggleDropdown('Company')"
+        >
+          Company
+        </li>
+        <li
+          class="menu-item"
+          :class="{ selected: toggleTab === 'Resources' && showDropdown }"
+          @click="() => onToggleDropdown('Resources')"
+        >
+          Resources
+        </li>
+        <li
+          class="menu-item"
+          :class="{ selected: toggleTab === 'Careers' && showDropdown }"
+          @click="() => onToggleDropdown('Careers')"
+        >
+          Careers
+        </li>
+        <li class="menu-item button secondry">Try WMS</li>
+        <li class="menu-item button primary">Contact Us</li>
+      </ul>
     </div>
-    <ul class="menu-container">
-      <li class="menu-item">Home</li>
-      <li class="menu-item">Company</li>
-      <li class="menu-item">Solution</li>
-      <li class="menu-item">Resources</li>
-      <li class="menu-item">Careers</li>
-      <li class="menu-item">Try WMS</li>
-      <li class="menu-item button">Contact Us</li> 
-    </ul>
+    <div class="dropdown" :class="{ hidden: !showDropdown }">
+      <div v-if="toggleTab === 'Solution'" class="container Solution">
+        <div>
+          <h4>Logistics</h4>
+          <p>
+            Edgistify bridges the broken links in your supply chain. We provide
+            operations, distribution, infrastructure & consultation solutions
+            based on your requirements.
+          </p>
+        </div>
+        <div>
+          <h4>Logistics</h4>
+          <p>
+            Edgistify bridges the broken links in your supply chain. We provide
+            operations, distribution, infrastructure & consultation solutions
+            based on your requirements.
+          </p>
+        </div>
+        <div>
+          <h4>Logistics</h4>
+          <p>
+            Edgistify bridges the broken links in your supply chain. We provide
+            operations, distribution, infrastructure & consultation solutions
+            based on your requirements.
+          </p>
+        </div>
+      </div>
+      <div v-if="toggleTab === 'Company'" class="container">
+        <div>About Us</div>
+        <div>History</div>
+        <div>Vision</div>
+        <div>Mentors</div>
+        <div>Founders</div>
+        <div>Team</div>
+      </div>
+      <div v-if="toggleTab === 'Resources'" class="container">
+        <div>Blog</div>
+        <div>Media</div>
+        <div>Case studies</div>
+        <div>Videos</div>
+        <div>Design</div>
+      </div>
+      <div v-if="toggleTab === 'Careers'" class="container">
+        <div>Why Join Us</div>
+        <div>Perks</div>
+        <div>Open position</div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -24,16 +92,60 @@
 .header-container {
   display: flex;
   width: 100%;
-  height: 70px;
-  align-items: center;
-  padding: 0 5rem;
+  height: fit-content;
+  flex-direction: column;
   justify-content: space-between;
-  background-color: #161616;
-  //   border: 1px solid grey;
   position: fixed;
   transition: 0.3s all ease-out;
   transform: translate3d(0, 0, 0);
 
+  .header {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    padding: 0 5rem;
+    justify-content: space-between;
+    background-color: #161616;
+  }
+  .dropdown {
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    padding: 0 5rem;
+    justify-content: space-between;
+    background-color: #232323;
+    color: #8d8d8d;
+    border-top: 2px solid gray;
+
+    h4 {
+      margin-bottom: 1rem;
+      font-size: 16px;
+    }
+
+    p {
+      font-size: 14px;
+      font-weight: 400;
+    }
+
+    &.hidden {
+      display: none;
+    }
+
+    .container {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      gap: 10%;
+      align-items: center;
+      min-height: 120px;
+      font-size: 14px;
+
+      &.Solution {
+        height: 250px;
+        justify-content: space-between;
+      }
+    }
+  }
   &.hidden {
     transform: translate3d(0, -100%, 0);
   }
@@ -58,10 +170,15 @@
       // text-transform: uppercase
       cursor: pointer;
       transition: all 0.3s ease;
+      color: #8d8d8d;
 
       &:hover {
         font-size: 12.1px;
         color: #00a699;
+      }
+
+      &.selected {
+        color: #fff;
       }
 
       &.button {
@@ -70,16 +187,25 @@
         height: 30px;
         align-items: center;
         justify-content: center;
-
+        border: 1px solid #00a699;
         border-radius: 40px;
-        background-color: #00a699;
+        color: #fff;
+        &.primary {
+          background-color: #00a699;
 
-        &:hover {
-          width: 120px;
-          height: 32px;
-          color: #000;
-          font-size: 12.1px;
+          &:hover {
+            background-color: #008b80;
+          }
         }
+        &.secondry {
+          border: 1px solid #fff;
+          background-color: transparent;
+
+          &:hover {
+            border-color: #008b80;
+          }
+        }
+
       }
     }
   }
@@ -91,6 +217,8 @@ export default {
     return {
       showNavbar: true,
       lastScrollPosition: 0,
+      showDropdown: false,
+      toggleTab: null,
     };
   },
 
@@ -110,6 +238,22 @@ export default {
       } // Here we determine whether we need to show or hide the navbar
       this.showNavbar = currentScrollPosition < this.lastScrollPosition; // Set the current scroll position as the last scroll position
       this.lastScrollPosition = currentScrollPosition;
+      if (!this.showNavbar) {
+        this.showDropdown = false;
+      }
+    },
+
+    onToggleDropdown(tab) {
+      if (this.showDropdown) {
+        if (this.toggleTab === tab) {
+          this.showDropdown = false;
+        } else {
+          this.toggleTab = tab;
+        }
+      } else {
+        this.showDropdown = true;
+        this.toggleTab = tab;
+      }
     },
   },
 };
