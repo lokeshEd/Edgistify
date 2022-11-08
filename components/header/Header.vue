@@ -10,28 +10,48 @@
           :class="{ selected: toggleTab === 'Solution' && showDropdown }"
           @click="() => onToggleDropdown('Solution')"
         >
-          Solution
+          <div class="container">
+            <div class="title">Solution</div>
+            <div class="dropdown-icon">
+              <v-img src="/Common/down-arrow.png" class="img" contain> </v-img>
+            </div>
+          </div>
         </li>
         <li
           class="menu-item"
           :class="{ selected: toggleTab === 'Company' && showDropdown }"
           @click="() => onToggleDropdown('Company')"
         >
-          Company
+          <div class="container">
+            <div class="title">Company</div>
+            <div class="dropdown-icon">
+              <v-img src="/Common/down-arrow.png" class="img" contain> </v-img>
+            </div>
+          </div>
         </li>
         <li
           class="menu-item"
           :class="{ selected: toggleTab === 'Resources' && showDropdown }"
           @click="() => onToggleDropdown('Resources')"
         >
-          Resources
+          <div class="container">
+            <div class="title">Resources</div>
+            <div class="dropdown-icon">
+              <v-img src="/Common/down-arrow.png" class="img" contain> </v-img>
+            </div>
+          </div>
         </li>
         <li
           class="menu-item"
           :class="{ selected: toggleTab === 'Careers' && showDropdown }"
           @click="() => onToggleDropdown('Careers')"
         >
-          Careers
+          <div class="container">
+            <div class="title">Careers</div>
+            <div class="dropdown-icon">
+              <v-img src="/Common/down-arrow.png" class="img" contain> </v-img>
+            </div>
+          </div>
         </li>
         <li class="menu-item button secondry">
           <span>Try<b> WMS</b></span>
@@ -40,51 +60,53 @@
       </ul>
     </div>
     <div class="dropdown" :class="{ hidden: !showDropdown }">
-      <div v-if="toggleTab === 'Solution'" class="container Solution">
-        <div>
-          <h4>Logistics</h4>
-          <p>
-            Edgistify bridges the broken links in your supply chain. We provide
-            operations, distribution, infrastructure & consultation solutions
-            based on your requirements.
-          </p>
+      <div class="dropdown-container">
+        <div v-if="toggleTab === 'Solution'" class="container Solution">
+          <div class="section one">
+            <h4>Logistics</h4>
+            <p>
+              Edgistify bridges the broken links in your supply chain. We
+              provide operations, distribution, infrastructure & consultation
+              solutions based on your requirements.
+            </p>
+          </div>
+          <div class="section two">
+            <h4>Logistics</h4>
+            <p>
+              Edgistify bridges the broken links in your supply chain. We
+              provide operations, distribution, infrastructure & consultation
+              solutions based on your requirements.
+            </p>
+          </div>
+          <div class="section three">
+            <h4>Logistics</h4>
+            <p>
+              Edgistify bridges the broken links in your supply chain. We
+              provide operations, distribution, infrastructure & consultation
+              solutions based on your requirements.
+            </p>
+          </div>
         </div>
-        <div>
-          <h4>Logistics</h4>
-          <p>
-            Edgistify bridges the broken links in your supply chain. We provide
-            operations, distribution, infrastructure & consultation solutions
-            based on your requirements.
-          </p>
+        <div v-if="toggleTab === 'Company'" class="container">
+          <div>About Us</div>
+          <div>History</div>
+          <div>Vision</div>
+          <div>Mentors</div>
+          <div>Founders</div>
+          <div>Team</div>
         </div>
-        <div>
-          <h4>Logistics</h4>
-          <p>
-            Edgistify bridges the broken links in your supply chain. We provide
-            operations, distribution, infrastructure & consultation solutions
-            based on your requirements.
-          </p>
+        <div v-if="toggleTab === 'Resources'" class="container">
+          <div>Blog</div>
+          <div>Media</div>
+          <div>Case studies</div>
+          <div>Videos</div>
+          <div>Design</div>
         </div>
-      </div>
-      <div v-if="toggleTab === 'Company'" class="container">
-        <div>About Us</div>
-        <div>History</div>
-        <div>Vision</div>
-        <div>Mentors</div>
-        <div>Founders</div>
-        <div>Team</div>
-      </div>
-      <div v-if="toggleTab === 'Resources'" class="container">
-        <div>Blog</div>
-        <div>Media</div>
-        <div>Case studies</div>
-        <div>Videos</div>
-        <div>Design</div>
-      </div>
-      <div v-if="toggleTab === 'Careers'" class="container">
-        <div>Why Join Us</div>
-        <div>Perks</div>
-        <div>Open position</div>
+        <div v-if="toggleTab === 'Careers'" class="container">
+          <div>Why Join Us</div>
+          <div>Perks</div>
+          <div>Open position</div>
+        </div>
       </div>
     </div>
   </div>
@@ -108,17 +130,25 @@
     height: 98px;
     padding: 0 5rem;
     justify-content: space-between;
-    background-color: #0C0C0C;
+    background-color: #0c0c0c;
   }
   .dropdown {
     display: flex;
-    align-items: center;
-    height: fit-content;
-    padding: 0 5rem;
+    height: calc(100vh - 98px);
     justify-content: space-between;
-    background-color: #232323;
+    background: #00000099;
+    z-index: 2;
     color: #8d8d8d;
     border-top: 2px solid gray;
+    transition: all 0.5s ease;
+
+    .dropdown-container {
+      display: flex;
+      width: 100%;
+      height: fit-content;
+      padding: 0 5rem;
+      background-color: #232323;
+    }
 
     h4 {
       margin-bottom: 1rem;
@@ -146,6 +176,17 @@
       &.Solution {
         height: 250px;
         justify-content: space-between;
+
+        .section {
+          &:hover {
+            h4 {
+              color: #00a699;
+            }
+            p {
+              color: #fff;
+            }
+          }
+        }
       }
     }
   }
@@ -170,18 +211,54 @@
       font-weight: 500;
       font-size: 16px;
       line-height: 20px;
+      height: 100%;
       // text-transform: uppercase
       cursor: pointer;
       transition: all 0.3s ease;
       color: #8d8d8d;
       margin-left: 60px;
+      position: relative;
+
+      .container {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        height: 50px;
+        flex-direction: column;
+        margin-top: 20px;
+
+        .title {
+          display: flex;
+          width: 100%;
+          height: 60%;
+          align-items: center;
+          justify-content: center;
+          user-select: none;
+        }
+        .dropdown-icon {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          height: 40%;
+        }
+      }
 
       &:hover {
         color: #fff;
       }
 
+      .img {
+        display: none;
+      }
       &.selected {
         color: #fff;
+
+        .img {
+          display: block;
+          height: 6px;
+          // margin-block: -2px;
+        }
       }
 
       &.button {
@@ -194,7 +271,7 @@
         color: #fff;
         padding: 10px 40px;
         font-family: "NotoSerif";
-        
+
         &.primary {
           background-color: #00a699;
           margin-left: 22px;

@@ -24,15 +24,25 @@
         <v-btn class="button primary">Talk to an Expert</v-btn>
         <div class="slide-items">
           <div>
-            <span>Hyperlocal Order Fulfilment</span>
-            <span>Ecommerce Order Fulfillment</span>
-            <span>B2B & B2C Warehousing Ops</span>
-            <span>Dark Store Ops</span>
-            <span>First, Middle & Last Mile</span>
-            <span>WMS & OMS</span>
-            <span>Fleet Managemant</span>
-            <span>Supplychain Consultancy</span>
-            <span>Warehousing Infra</span>
+            <span>&#9679; Hyperlocal Order Fulfilment</span>
+            <span>&#9679; Ecommerce Order Fulfillment</span>
+            <span>&#9679; B2B & B2C Warehousing Ops</span>
+            <span>&#9679; Dark Store Ops</span>
+            <span>&#9679; First, Middle & Last Mile</span>
+            <span>&#9679; WMS & OMS</span>
+            <span>&#9679; Fleet Managemant</span>
+            <span>&#9679; Supplychain Consultancy</span>
+            <span>&#9679; Warehousing Infra</span>
+            <span>&#9679; Hyperlocal Order Fulfilment</span>
+            <span>&#9679; Ecommerce Order Fulfillment</span>
+            <span>&#9679; B2B & B2C Warehousing Ops</span>
+            <span>&#9679; Dark Store Ops</span>
+            <span>&#9679; First, Middle & Last Mile</span>
+            <span>&#9679; WMS & OMS</span>
+            <span>&#9679; Fleet Managemant</span>
+            <span>&#9679; Supplychain Consultancy</span>
+            <span>&#9679; Warehousing Infra</span>
+            <span>&#9679; Hyperlocal Order Fulfilment</span>
           </div>
         </div>
       </div>
@@ -178,6 +188,7 @@
         overflow: hidden;
         text-transform: uppercase;
         position: relative;
+        transition: all 0.5s ease;
 
         div {
           display: inline-block;
@@ -188,18 +199,19 @@
           animation: marquee 20s linear infinite;
 
           span {
-            padding: 0 1.5rem;
+            padding: 0 2rem;
             font-size: 14px;
             font-weight: 400;
             float: left;
             overflow: hidden;
+            color: #fff;
           }
         }
       }
 
       @keyframes marquee {
         0% {
-          left: 100%;
+          left: 10%;
         }
         100% {
           left: -100%;
@@ -281,6 +293,7 @@
     padding: 10px 40px;
     font-family: "NotoSerif";
     text-transform: capitalize;
+    font-size: 16px;
 
     &.primary {
       background-color: #00a699;
