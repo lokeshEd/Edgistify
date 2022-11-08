@@ -24,25 +24,44 @@
         <v-btn class="button primary">Talk to an Expert</v-btn>
         <div class="slide-items">
           <div>
-            <span>&#9679; Hyperlocal Order Fulfilment</span>
-            <span>&#9679; Ecommerce Order Fulfillment</span>
-            <span>&#9679; B2B & B2C Warehousing Ops</span>
-            <span>&#9679; Dark Store Ops</span>
-            <span>&#9679; First, Middle & Last Mile</span>
-            <span>&#9679; WMS & OMS</span>
-            <span>&#9679; Fleet Managemant</span>
-            <span>&#9679; Supplychain Consultancy</span>
-            <span>&#9679; Warehousing Infra</span>
-            <span>&#9679; Hyperlocal Order Fulfilment</span>
-            <span>&#9679; Ecommerce Order Fulfillment</span>
-            <span>&#9679; B2B & B2C Warehousing Ops</span>
-            <span>&#9679; Dark Store Ops</span>
-            <span>&#9679; First, Middle & Last Mile</span>
-            <span>&#9679; WMS & OMS</span>
-            <span>&#9679; Fleet Managemant</span>
-            <span>&#9679; Supplychain Consultancy</span>
-            <span>&#9679; Warehousing Infra</span>
-            <span>&#9679; Hyperlocal Order Fulfilment</span>
+            <span> Hyperlocal Order Fulfilment</span>
+            <span class="dot">&#9679;</span>
+            <span> Ecommerce Order Fulfillment</span>
+            <span class="dot">&#9679;</span>
+            <span> B2B & B2C Warehousing Ops</span>
+            <span class="dot">&#9679;</span>
+            <span> Dark Store Ops</span>
+            <span class="dot">&#9679;</span>
+            <span> First, Middle & Last Mile</span>
+            <span class="dot">&#9679;</span>
+            <span> WMS & OMS</span>
+            <span class="dot">&#9679;</span>
+            <span> Fleet Managemant</span>
+            <span class="dot">&#9679;</span>
+            <span> Supplychain Consultancy</span>
+            <span class="dot">&#9679;</span>
+            <span> Warehousing Infra</span>
+            <span class="dot">&#9679;</span>
+            <span> Hyperlocal Order Fulfilment</span>
+            <span class="dot">&#9679;</span>
+            <span> Ecommerce Order Fulfillment</span>
+            <span class="dot">&#9679;</span>
+            <span> B2B & B2C Warehousing Ops</span>
+            <span class="dot">&#9679;</span>
+            <span> Dark Store Ops</span>
+            <span class="dot">&#9679;</span>
+            <span> First, Middle & Last Mile</span>
+            <span class="dot">&#9679;</span>
+            <span> WMS & OMS</span>
+            <span class="dot">&#9679;</span>
+            <span> Fleet Managemant</span>
+            <span class="dot">&#9679;</span>
+            <span> Supplychain Consultancy</span>
+            <span class="dot">&#9679;</span>
+            <span> Warehousing Infra</span>
+            <span class="dot">&#9679;</span>
+            <span> Hyperlocal Order Fulfilment</span>
+            <span class="dot">&#9679;</span>
           </div>
         </div>
       </div>
@@ -100,7 +119,7 @@
     display: flex;
     width: 100%;
     margin-top: 60px;
-    height: calc(100vh - 98px);
+    height: calc(100vh - 68px);
     align-items: center;
     justify-content: center;
     background-color: #0c0c0c;
@@ -201,10 +220,14 @@
           span {
             padding: 0 2rem;
             font-size: 14px;
-            font-weight: 400;
             float: left;
             overflow: hidden;
             color: #fff;
+            font-weight: 300;
+          }
+
+          .dot{
+            color: #00a699;
           }
         }
       }
