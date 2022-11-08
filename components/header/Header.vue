@@ -100,6 +100,7 @@
   position: fixed;
   transition: 0.3s all ease-out;
   transform: translate3d(0, 0, 0);
+  z-index: 1;
 
   .header {
     display: flex;
@@ -107,7 +108,7 @@
     height: 98px;
     padding: 0 5rem;
     justify-content: space-between;
-    background-color: #161616;
+    background-color: #0C0C0C;
   }
   .dropdown {
     display: flex;

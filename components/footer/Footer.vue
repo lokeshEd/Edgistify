@@ -84,7 +84,7 @@
   height: 460px;
   align-items: center;
   justify-content: center;
-  background-color: #131313;
+  background-color: #0C0C0C;
 
   .footer-content {
     display: flex;

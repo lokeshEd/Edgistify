@@ -1,0 +1,174 @@
+<template>
+  <div class="our-services-container">
+    <div class="section-container">
+      <div
+        class="section"
+        :class="{ selected: selected === 'Logistics' }"
+        @click="() => toggleSelection('Logistics')"
+      >
+        <span>Logistics</span>
+      </div>
+      <div
+        class="section"
+        :class="{ selected: selected === 'Technology' }"
+        @click="() => toggleSelection('Technology')"
+      >
+        <span>Technology</span>
+      </div>
+      <div
+        class="section"
+        :class="{ selected: selected === 'Fulfillment' }"
+        @click="() => toggleSelection('Fulfillment')"
+      >
+        <span>Fulfillment</span>
+      </div>
+    </div>
+    <div v-if="selected === 'Logistics'" class="content-container">
+      <div class="content-text">
+        <h2>Full suite of logistics services</h2>
+        <p>
+          Edgistify bridges the broken links in your supply chain. We provide
+          operations, distribution, infrastructure & consultation solutions
+          based on your requirements.
+        </p>
+      </div>
+      <div class="content-image">
+        <div class="image-container">
+          <v-img
+            src="/Homepage/OurServices/our-services-thumbnail-01.png"
+            width="400px"
+            contain
+          />
+        </div>
+      </div>
+    </div>
+    <div v-if="selected === 'Technology'" class="content-container">
+      <div class="content-text">
+        <h2>Technology-driven logistics solutions</h2>
+        <p>
+          Edgistify leverages advanced technology to manage your logistics.
+          Automate & Integrate your marketplaces, carriers & ERP with EdgeOS
+        </p>
+      </div>
+      <div class="content-image">
+        <div class="image-container">
+          <v-img
+            src="/Homepage/OurServices/our-services-thumbnail-02.png"
+            width="400px"
+            contain
+          />
+        </div>
+      </div>
+    </div>
+    <div v-if="selected === 'Fulfillment'" class="content-container">
+      <div class="content-text">
+        <h2>Deliver customer satisfaction with speedy fulfillment</h2>
+        <p>
+          Edgistify enables hyperlocal, same day & next day delivery with the
+          help of robust warehousing & dark store network across all metro &
+          tier 2-3 cities.
+        </p>
+      </div>
+      <div class="content-image">
+        <div class="image-container">
+          <v-img
+            src="/Homepage/OurServices/our-services-thumbnail-03.png"
+            width="400px"
+            contain
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<style lang="scss" scoped>
+.our-services-container {
+  display: flex;
+  width: 100%;
+  height: 631px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #0c0c0c;
+  padding: 0 4rem;
+
+  .section-container {
+    display: flex;
+    width: 100%;
+    height: 10%;
+    align-items: center;
+    justify-content: center;
+
+    .section {
+      display: flex;
+      width: 30%;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+
+      border-bottom: 2px solid #4e4e4e;
+      &.selected {
+        border-color: #00a699;
+        border-width: 3px;
+      }
+    }
+  }
+  .content-container {
+    display: flex;
+    width: 90%;
+    height: 80%;
+    align-items: center;
+    justify-content: center;
+
+    .content-text {
+      display: flex;
+      width: 35%;
+      height: 90%;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      h2 {
+        font-size: 51px;
+        font-family: "Notoserif";
+        line-height: 70px;
+      }
+      p {
+        font-size: 16px;
+        font-weight: 300;
+        font-family: "Outfit";
+        padding-right: 5rem;
+      }
+    }
+    .content-image {
+      display: flex;
+      width: 65%;
+      height: 80%;
+      align-items: center;
+      justify-content: center;
+
+      .image-container {
+        display: flex;
+        // background-color: #00a699;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+</style>
+
+<script>
+export default {
+  data() {
+    return {
+      selected: "Logistics",
+    };
+  },
+  methods: {
+    toggleSelection(section) {
+      if (this.selected !== section) this.selected = section;
+    },
+  },
+};
+</script>

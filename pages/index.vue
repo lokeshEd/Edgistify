@@ -61,9 +61,11 @@
         </div>
       </div>
       <div class="description-container">
-        <v-img src="/Rectangle 84.png" contain> </v-img>
+        <v-btn class="button primary">Contact Us</v-btn>
       </div>
     </div>
+    <!-- <TrustedBrands/>
+    <OurServices/> -->
   </div>
 </template>
 
@@ -87,16 +89,14 @@
   .hero-container {
     display: flex;
     width: 100%;
+    margin-top: 60px;
     height: calc(100vh - 98px);
     align-items: center;
     justify-content: center;
-    background-color: #1e1e1e;
+    background-color: #0c0c0c;
     padding: 0 2rem;
     flex-direction: column;
     padding-top: 90px;
-    background-image: url("/Dots.png");
-    background-size: cover;
-    background-position: center;
 
     .title {
       display: flex;
@@ -148,9 +148,8 @@
           display: flex;
           width: 100%;
           align-items: flex-end;
-          padding-bottom: 1rem;
           justify-content: center;
-          padding: 0 6rem;
+          padding: 0 4rem;
           margin-right: 2rem;
           height: 25%;
           color: #8d8d8d;
@@ -169,40 +168,12 @@
       justify-content: space-between;
       // background: #00a699;
 
-      .button {
-        display: flex;
-        height: 42px;
-        align-items: center;
-        justify-content: center;
-        border: 1px solid #00a699;
-        border-radius: 40px;
-        color: #fff;
-        padding: 10px 40px;
-        font-family: "NotoSerif";
-        text-transform: capitalize;
-
-        &.primary {
-          background-color: #00a699;
-
-          &:hover {
-            background-color: #008b80;
-          }
-        }
-        &.secondry {
-          border: 1px solid #fff;
-          background-color: transparent;
-
-          &:hover {
-            border-color: #008b80;
-          }
-        }
-      }
-
       .slide-items {
         display: flex;
         width: 120%;
         align-items: center;
-        border-top: 2px solid gray;
+        border-top: 2px solid #ffffff;
+        border-bottom: 2px solid #ffffff;
         height: 40px;
         overflow: hidden;
         text-transform: uppercase;
@@ -219,6 +190,7 @@
           span {
             padding: 0 1.5rem;
             font-size: 14px;
+            font-weight: 400;
             float: left;
             overflow: hidden;
           }
@@ -243,7 +215,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: #ededed;
+    background-color: #0c0c0c;
 
     .heading-container {
       display: flex;
@@ -251,7 +223,7 @@
       height: 25%;
       align-items: center;
       justify-content: center;
-      background-color: #fff;
+      background-color: #0c0c0c;
 
       .heading {
         display: flex;
@@ -260,15 +232,17 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        color: #1e1e1e;
-        border-left: 1px solid #1e1e1e;
+        color: #ffffff;
+        border-left: 1px solid #8d8d8d;
 
         &:first-child {
           border: none;
         }
 
         span {
+          font-family: "NotoSerif";
           font-size: 16px;
+          font-weight: 400;
         }
         h2 {
           font-size: 60px;
@@ -286,8 +260,51 @@
       height: 75%;
       align-items: center;
       justify-content: center;
+      background-image: url("/Rectangle 84.png");
+      background-position: center;
+      background-size: cover;
+
+      .button {
+        margin-top: 20%;
+      }
+    }
+  }
+
+  .button {
+    display: flex;
+    height: 42px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #00a699;
+    border-radius: 40px;
+    color: #fff;
+    padding: 10px 40px;
+    font-family: "NotoSerif";
+    text-transform: capitalize;
+
+    &.primary {
+      background-color: #00a699;
+
+      &:hover {
+        background-color: #008b80;
+      }
+    }
+    &.secondry {
+      border: 1px solid #fff;
+      background-color: transparent;
+
+      &:hover {
+        border-color: #008b80;
+      }
     }
   }
 }
 </style>
-<script></script>
+<script>
+import TrustedBrands from "../components/HomePage/TrustedBrands/TrustedBrands.vue";
+import OurServices from "../components/HomePage/OurServices/OurServices.vue";
+
+export default {
+  components: { TrustedBrands, OurServices },
+};
+</script>
