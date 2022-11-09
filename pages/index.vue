@@ -93,8 +93,10 @@
         <v-btn class="button primary">Contact Us</v-btn>
       </div>
     </div>
-    <!-- <TrustedBrands/>
-    <OurServices/> -->
+    <!-- <TrustedBrands />
+    <OurServices />
+    <OurNetworks />
+    <OurExperties /> -->
   </div>
 </template>
 
@@ -225,7 +227,7 @@
             font-weight: 300;
           }
 
-          .dot{
+          .dot {
             color: #00a699;
           }
         }
@@ -267,7 +269,7 @@
         align-items: center;
         justify-content: center;
         color: #ffffff;
-        border-left: 1px solid #8D8D8D;
+        border-left: 1px solid #8d8d8d;
 
         &:first-child {
           border: none;
@@ -338,8 +340,10 @@
 <script>
 import TrustedBrands from "../components/HomePage/TrustedBrands/TrustedBrands.vue";
 import OurServices from "../components/HomePage/OurServices/OurServices.vue";
+import OurNetworks from "../components/HomePage/OurNetwork/OurNetworks.vue";
+import OurExperties from "../components/HomePage/OurExperties/OurExperties.vue";
 
 export default {
-  components: { TrustedBrands, OurServices },
+  components: { TrustedBrands, OurServices, OurNetworks, OurExperties },
 };
 </script>

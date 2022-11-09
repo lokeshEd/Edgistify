@@ -106,6 +106,7 @@
       height: 100%;
       align-items: center;
       justify-content: center;
+      cursor: pointer;
 
       border-bottom: 2px solid #4e4e4e;
       &.selected {
