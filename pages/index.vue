@@ -118,7 +118,7 @@
   .hero-container {
     display: flex;
     width: 100%;
-    height: calc(100vh - 145px);
+    height: calc(100vh - 115px);
     align-items: center;
     justify-content: center;
     background-color: #0c0c0c;
