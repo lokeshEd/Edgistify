@@ -118,8 +118,7 @@
   .hero-container {
     display: flex;
     width: 100%;
-    margin-top: 60px;
-    height: calc(100vh - 68px);
+    height: calc(100vh - 145px);
     align-items: center;
     justify-content: center;
     background-color: #0c0c0c;
@@ -268,7 +267,7 @@
         align-items: center;
         justify-content: center;
         color: #ffffff;
-        border-left: 1px solid #8d8d8d;
+        border-left: 1px solid #8D8D8D;
 
         &:first-child {
           border: none;
