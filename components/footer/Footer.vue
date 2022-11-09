@@ -2,7 +2,7 @@
   <div class="footer-container">
     <div class="footer-content">
       <div class="logo-container">
-        <h1>Edge Logistics Simplify.</h1>
+        <h1><span>Edg</span>e Log<span>isti</span>cs Simpli<span>fy</span>.</h1>
       </div>
       <div class="content-container">
         <div class="links-container">
@@ -48,7 +48,12 @@
               flat
               dense
               placeholder="Company/brand or your e-mail"
-              style="max-width: 300px; height: 40px; border-radius: 3px 0 0 3px; font-size: 13px;"
+              style="
+                max-width: 300px;
+                height: 40px;
+                border-radius: 3px 0 0 3px;
+                font-size: 13px;
+              "
               hide-spin-buttons
             />
             <v-btn
@@ -57,7 +62,12 @@
               height="38px"
               depressed
               color="#00A699"
-              style="border-radius: 0 3px 3px 0; margin-left: 1px; font-size: 13px; text-transform: capitalize;"
+              style="
+                border-radius: 0 3px 3px 0;
+                margin-left: 1px;
+                font-size: 13px;
+                text-transform: capitalize;
+              "
               >Submit</v-btn
             >
           </div>
@@ -84,7 +94,7 @@
   height: 460px;
   align-items: center;
   justify-content: center;
-  background-color: #0C0C0C;
+  background-color: #0c0c0c;
 
   .footer-content {
     display: flex;
@@ -98,12 +108,19 @@
       height: 100%;
       align-items: center;
       padding: 0 4rem;
+      transition: all 0.5s ease;
 
       h1 {
         margin-top: 4rem;
         width: 200px;
         font-size: 4rem;
         padding: 0 4rem;
+
+        &:hover {
+          span {
+            color: #00a699;
+          }
+        }
       }
     }
     .content-container {
@@ -159,7 +176,7 @@
         flex-direction: column;
 
         .input-container {
-          margin-top: .5rem;
+          margin-top: 0.5rem;
           display: flex;
         }
       }
