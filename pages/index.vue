@@ -95,8 +95,9 @@
     </div>
     <TrustedBrands />
     <OurServices />
-    <!-- <OurNetworks />
-    <OurExperties /> -->
+    <OurNetworks />
+    <OurExperties />
+    <OurAwards />
   </div>
 </template>
 
@@ -342,8 +343,15 @@ import TrustedBrands from "../components/HomePage/TrustedBrands/TrustedBrands.vu
 import OurServices from "../components/HomePage/OurServices/OurServices.vue";
 import OurNetworks from "../components/HomePage/OurNetwork/OurNetworks.vue";
 import OurExperties from "../components/HomePage/OurExperties/OurExperties.vue";
+import OurAwards from "../components/HomePage/OurAwards/OurAwards.vue";
 
 export default {
-  components: { TrustedBrands, OurServices, OurNetworks, OurExperties },
+  components: {
+    TrustedBrands,
+    OurServices,
+    OurNetworks,
+    OurExperties,
+    OurAwards,
+  },
 };
 </script>
