@@ -98,6 +98,7 @@
     <OurNetworks />
     <OurExperties />
     <OurAwards />
+    <OurReach />
   </div>
 </template>
 
@@ -125,7 +126,6 @@
     align-items: center;
     justify-content: center;
     background-color: #0c0c0c;
-    padding: 0 2rem;
     flex-direction: column;
     padding-top: 90px;
 
@@ -135,19 +135,18 @@
       height: 75%;
       .heading-container {
         display: flex;
+        // border: 1px solid grey;
         width: 65%;
         height: 100%;
         align-items: center;
-        justify-content: center;
 
         .heading {
           display: flex;
           width: 100%;
-          height: 40;
+          height: 40%;
           align-items: center;
-          justify-content: center;
           border-right: 2px solid #8d8d8d;
-          padding: 0 4rem;
+          padding: 0 94px;
 
           h1 {
             font-size: 82px;
@@ -220,7 +219,7 @@
           animation: marquee 20s linear infinite;
 
           span {
-            padding: 0 2rem;
+            padding: 0 1rem;
             font-size: 14px;
             float: left;
             overflow: hidden;
@@ -253,15 +252,15 @@
     justify-content: center;
     flex-direction: column;
     background-color: #0c0c0c;
-
+    
     .heading-container {
       display: flex;
       width: 100%;
       height: 25%;
       align-items: center;
       justify-content: center;
-      background-color: #0c0c0c;
-
+      background-color: #fff;
+      
       .heading {
         display: flex;
         width: 20%;
@@ -269,9 +268,9 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        color: #ffffff;
+        color: #0C0C0C;
         border-left: 1px solid #8d8d8d;
-
+        
         &:first-child {
           border: none;
         }
@@ -344,6 +343,7 @@ import OurServices from "../components/HomePage/OurServices/OurServices.vue";
 import OurNetworks from "../components/HomePage/OurNetwork/OurNetworks.vue";
 import OurExperties from "../components/HomePage/OurExperties/OurExperties.vue";
 import OurAwards from "../components/HomePage/OurAwards/OurAwards.vue";
+import OurReach from "../components/HomePage/OurReach/OurReach.vue";
 
 export default {
   components: {
@@ -352,6 +352,7 @@ export default {
     OurNetworks,
     OurExperties,
     OurAwards,
+    OurReach,
   },
 };
 </script>

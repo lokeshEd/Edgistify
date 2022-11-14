@@ -2,7 +2,7 @@
   <div class="header-container" :class="{ hidden: !showNavbar }">
     <div class="header">
       <div class="logo-container">
-        <v-img src="/Edgistify.png" height="30px" contain> </v-img>
+        <v-img src="/Edgistify.png" height="30px" class="logo" contain> </v-img>
       </div>
       <ul class="menu-container">
         <li
@@ -63,49 +63,123 @@
       <div class="dropdown-container">
         <div v-if="toggleTab === 'Solution'" class="container Solution">
           <div class="section one">
-            <h4>Logistics</h4>
-            <p>
-              Edgistify bridges the broken links in your supply chain. We
-              provide operations, distribution, infrastructure & consultation
-              solutions based on your requirements.
-            </p>
+            <div class="section-heading">
+              <h4>Logistics</h4>
+            </div>
+            <div class="section-content">
+              <div class="icon">
+                <v-img src="/Common/right-arrow.png" class="img" contain>
+                </v-img>
+              </div>
+              <div class="item">First Mile</div>
+            </div>
+            <div class="section-content">
+              <div class="icon">
+                <v-img src="/Common/right-arrow.png" class="img" contain>
+                </v-img>
+              </div>
+              <div class="item">Middle Mile</div>
+            </div>
+            <div class="section-content">
+              <div class="icon">
+                <v-img src="/Common/right-arrow.png" class="img" contain>
+                </v-img>
+              </div>
+              <div class="item">Last Mile</div>
+            </div>
+            <div class="section-content">
+              <div class="icon">
+                <v-img src="/Common/right-arrow.png" class="img" contain>
+                </v-img>
+              </div>
+              <div class="item">Warehousing Ops</div>
+            </div>
+            <div class="section-content">
+              <div class="icon">
+                <v-img src="/Common/right-arrow.png" class="img" contain>
+                </v-img>
+              </div>
+              <div class="item">Darkstore Ops</div>
+            </div>
+            <div class="section-content">
+              <div class="icon">
+                <v-img src="/Common/right-arrow.png" class="img" contain>
+                </v-img>
+              </div>
+              <div class="item">Warehousing Infra</div>
+            </div>
+            <div class="section-content">
+              <div class="icon">
+                <v-img src="/Common/right-arrow.png" class="img" contain>
+                </v-img>
+              </div>
+              <div class="item">SupplyChain Consultancy</div>
+            </div>
           </div>
           <div class="section two">
-            <h4>Logistics</h4>
-            <p>
-              Edgistify bridges the broken links in your supply chain. We
-              provide operations, distribution, infrastructure & consultation
-              solutions based on your requirements.
-            </p>
+            <div class="section-heading">
+              <h4>Technology</h4>
+            </div>
+            <div class="section-content">
+              <div class="icon">
+                <v-img src="/Common/right-arrow.png" class="img" contain>
+                </v-img>
+              </div>
+              <div class="item">WMS & OMS</div>
+            </div>
+            <div class="section-content">
+              <div class="icon">
+                <v-img src="/Common/right-arrow.png" class="img" contain>
+                </v-img>
+              </div>
+              <div class="item">Fleet Management</div>
+            </div>
           </div>
           <div class="section three">
-            <h4>Logistics</h4>
-            <p>
-              Edgistify bridges the broken links in your supply chain. We
-              provide operations, distribution, infrastructure & consultation
-              solutions based on your requirements.
-            </p>
+            <div class="section-heading">
+              <h4>Fulfillment</h4>
+            </div>
+            <div class="section-content">
+              <div class="icon">
+                <v-img src="/Common/right-arrow.png" class="img" contain>
+                </v-img>
+              </div>
+              <div class="item">Hyperlocal Delivery</div>
+            </div>
+            <div class="section-content">
+              <div class="icon">
+                <v-img src="/Common/right-arrow.png" class="img" contain>
+                </v-img>
+              </div>
+              <div class="item">Same day E-commerce Delivery</div>
+            </div>
+            <div class="section-content">
+              <div class="icon">
+                <v-img src="/Common/right-arrow.png" class="img" contain>
+                </v-img>
+              </div>
+              <div class="item">Retail Distribution</div>
+            </div>
           </div>
         </div>
         <div v-if="toggleTab === 'Company'" class="container">
-          <div>About Us</div>
-          <div>History</div>
-          <div>Vision</div>
-          <div>Mentors</div>
-          <div>Founders</div>
-          <div>Team</div>
+          <div class="menu-item">About Us</div>
+          <div class="menu-item">History</div>
+          <div class="menu-item">Vision</div>
+          <div class="menu-item">Mentors</div>
+          <div class="menu-item">Founders</div>
+          <div class="menu-item">Team</div>
         </div>
         <div v-if="toggleTab === 'Resources'" class="container">
-          <div>Blog</div>
-          <div>Media</div>
-          <div>Case studies</div>
-          <div>Videos</div>
-          <div>Design</div>
+          <div class="menu-item">Blog</div>
+          <div class="menu-item">Media</div>
+          <div class="menu-item">Case studies</div>
+          <div class="menu-item">Videos</div>
+          <div class="menu-item">Design</div>
         </div>
         <div v-if="toggleTab === 'Careers'" class="container">
-          <div>Why Join Us</div>
-          <div>Perks</div>
-          <div>Open position</div>
+          <div class="menu-item">Why Join Us</div>
+          <div class="menu-item">Open position</div>
         </div>
       </div>
     </div>
@@ -128,9 +202,17 @@
     display: flex;
     align-items: center;
     height: 98px;
-    padding: 0 5rem;
+    padding: 0 94px;
     justify-content: space-between;
     background-color: #0c0c0c;
+
+    .logo-container {
+      display: flex;
+
+      .logo {
+        display: none;
+      }
+    }
   }
   .dropdown {
     display: flex;
@@ -146,7 +228,7 @@
       display: flex;
       width: 100%;
       height: fit-content;
-      padding: 0 5rem;
+      padding: 0 94px;
       background-color: #232323;
     }
 
@@ -169,15 +251,20 @@
       width: 100%;
       height: 100%;
       gap: 10%;
-      align-items: center;
+      padding-top: 52px;
       min-height: 120px;
       font-size: 14px;
+      // border: 1px solid green;
 
       &.Solution {
         height: 250px;
-        justify-content: space-between;
 
         .section {
+          display: flex;
+          flex-direction: column;
+          width: 300px;
+          // border: 1px solid grey;
+
           &:hover {
             h4 {
               color: #00a699;
@@ -186,6 +273,67 @@
               color: #fff;
             }
           }
+
+          .section-heading {
+            display: flex;
+            width: 100%;
+            height: 40px;
+            align-items: center;
+            color: #fff;
+          }
+
+          .section-content {
+            display: flex;
+            width: 100%;
+            margin-left: -10%;
+
+            .icon {
+              display: flex;
+              width: 10%;
+              height: 100%;
+              align-items: center;
+              justify-content: center;
+              // border: 1px solid grey;
+
+              .img {
+                display: none;
+              }
+            }
+            .item {
+              display: flex;
+              width: 90%;
+              height: 100%;
+              align-items: center;
+              // border: 1px solid grey;
+            }
+
+            &:hover {
+              .icon {
+                .img {
+                  display: block;
+                }
+              }
+              .item {
+                color: #fff;
+              }
+            }
+          }
+        }
+
+        .img {
+          display: none;
+        }
+        .img {
+          display: block;
+          height: 12px;
+          // margin-block: -2px;
+        }
+      }
+
+      .menu-item {
+        color: #fff;
+        &:hover {
+          color: #00a699;
         }
       }
     }

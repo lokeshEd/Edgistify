@@ -38,7 +38,7 @@
   justify-content: center;
   flex-direction: column;
   background-color: #ffffff;
-  padding: 0 7rem;
+  padding: 0 94px;
 
   h2 {
     font-family: "NotoSerif";

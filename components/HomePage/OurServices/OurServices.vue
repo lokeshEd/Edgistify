@@ -91,7 +91,7 @@
   justify-content: center;
   flex-direction: column;
   background-color: #0c0c0c;
-  padding: 0 4rem;
+  padding: 0 94px;
 
   .section-container {
     display: flex;
@@ -102,7 +102,7 @@
 
     .section {
       display: flex;
-      width: 30%;
+      width: 33.3%;
       height: 100%;
       align-items: center;
       justify-content: center;
@@ -117,7 +117,7 @@
   }
   .content-container {
     display: flex;
-    width: 90%;
+    width: 100%;
     height: 80%;
     align-items: center;
     justify-content: center;
