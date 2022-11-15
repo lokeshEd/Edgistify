@@ -116,7 +116,7 @@
   flex-direction: column;
   background-color: #0c0c0c;
   padding: 0 94px;
-  background-image: url("/Homepage/OurServices/background-grid.png");
+  background-image: url("/Common/background-grid.png");
   background-position: bottom;
   background-size: contain;
 

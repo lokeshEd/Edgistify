@@ -24,16 +24,85 @@
     </div>
     <div v-if="selected === 'Sectors'" class="sectors-cards">
       <div class="cards-container">
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
+        <div class="card">
+          <div class="icon-container">
+            <v-img
+              src="/Homepage/OurNetwork/store-icon.png"
+              width="100px"
+              contain
+            />
+          </div>
+          <div class="title">E-commerce</div>
+        </div>
+        <div class="card">
+          <div class="icon-container">
+            <v-img
+              src="/Homepage/OurNetwork/store-icon.png"
+              width="100px"
+              contain
+            />
+          </div>
+          <div class="title">FMCG</div>
+        </div>
+        <div class="card">
+          <div class="icon-container">
+            <v-img
+              src="/Homepage/OurNetwork/store-icon.png"
+              width="100px"
+              contain
+            />
+          </div>
+          <div class="title">E-commerce</div>
+        </div>
+        <div class="card">
+          <div class="icon-container">
+            <v-img
+              src="/Homepage/OurNetwork/store-icon.png"
+              width="100px"
+              contain
+            />
+          </div>
+          <div class="title">E-commerce</div>
+        </div>
       </div>
       <div class="cards-container">
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
+        <div class="card">
+          <div class="icon-container">
+            <v-img
+              src="/Homepage/OurNetwork/store-icon.png"
+              width="100px"
+              contain
+            />
+          </div>
+          <div class="title">Automotive</div>
+        </div><div class="card">
+          <div class="icon-container">
+            <v-img
+              src="/Homepage/OurNetwork/store-icon.png"
+              width="100px"
+              contain
+            />
+          </div>
+          <div class="title">E-commerce</div>
+        </div><div class="card">
+          <div class="icon-container">
+            <v-img
+              src="/Homepage/OurNetwork/store-icon.png"
+              width="100px"
+              contain
+            />
+          </div>
+          <div class="title">E-commerce</div>
+        </div><div class="card">
+          <div class="icon-container">
+            <v-img
+              src="/Homepage/OurNetwork/store-icon.png"
+              width="100px"
+              contain
+            />
+          </div>
+          <div class="title">E-commerce</div>
+        </div>
       </div>
     </div>
     <div v-if="selected === 'Business Models'" class="business-models-cards">
@@ -70,12 +139,11 @@
   align-items: center;
   justify-content: center;
   height: 858px;
-  background-color: #f3f3f5;
+  background-color: #fff;
   width: 100%;
   padding: 0 94px;
 
   .heading {
-    
     display: flex;
     width: 100%;
     height: 20%;
@@ -95,7 +163,6 @@
     height: 10%;
     align-items: center;
     justify-content: center;
-    
 
     .section {
       display: flex;
@@ -123,7 +190,7 @@
   }
 
   .sectors-cards {
-    border: 1px solid grey;
+    // border: 1px solid grey;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -141,34 +208,41 @@
 
       .card {
         display: flex;
-        width: 280px;
-        height: 200px;
+        width: 286px;
+        height: 194px;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
-        background-color: #fff;
+        background-color: #F3F3F5;
+
+        .title{
+          font-weight: 500;
+          font-size: 16px;
+          margin-top: 20px;
+          color: #000000;
+        }
       }
     }
   }
   .business-models-cards {
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 80%;
+    justify-content: space-between;
+    width: 100%;
     height: 60%;
     padding-top: 80px;
 
     .cards-container {
       display: flex;
-      align-items: center;
       flex-direction: column;
       justify-content: space-between;
-      width: 40%;
+      width: 50%;
       height: 100%;
       color: #000000;
 
       .card-thumbnail {
         display: flex;
-        width: 600px;
+        width: 620px;
         height: 280px;
         background-color: #d9d9d9;
       }

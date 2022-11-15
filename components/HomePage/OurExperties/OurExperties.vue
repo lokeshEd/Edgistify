@@ -22,51 +22,71 @@
       </div>
       <div class="right-section-container">
         <div class="item-container">
-          <v-img
-            src="/Homepage/OurExperties/wh-network.png"
-            height="50px"
-            contain
-          >
-          </v-img>
-          <div>
-            <h3>Warehouse Network</h3>
-            <span
-              >Presence across 21 cities with Extensive Network of 350+
-              warehouses & dark stores
-            </span>
+          <div class="icon-container">
+            <v-img
+              src="/Homepage/OurExperties/wh-network.png"
+              height="65px"
+              contain
+            >
+            </v-img>
+          </div>
+          <div class="content-container">
+            <div class="title">
+              <h3>Warehouse Network</h3>
+            </div>
+            <div class="description">
+              <span
+                >Presence across 21 cities with Extensive Network of 350+
+                warehouses & dark stores
+              </span>
+            </div>
           </div>
         </div>
         <div class="item-container">
-          <v-img
-            src="/Homepage/OurExperties/tech-platform.png"
-            height="50px"
-            contain
-          >
-          </v-img>
-          <div>
-            <h3>Tech Platform</h3>
-            <span
-              >EdgeOS-Warehouse/Order Management System with Marketplace &
-              Carrier Integration
-            </span>
+          <div class="icon-container">
+            <v-img
+              src="/Homepage/OurExperties/tech-platform.png"
+              height="65px"
+              contain
+            >
+            </v-img>
+          </div>
+          <div class="content-container">
+            <div class="title">
+              <h3>Tech Platform</h3>
+            </div>
+            <div class="description">
+              <span
+                >EdgeOS-Warehouse/Order Management System with Marketplace &
+                Carrier Integration
+              </span>
+            </div>
           </div>
         </div>
         <div class="item-container">
-          <v-img
-            src="/Homepage/OurExperties/sc-experties.png"
-            height="50px"
-            contain
-          >
-          </v-img>
-          <div>
-            <h3>Supply Chain Expertise</h3>
-            <span
-              >Industry based expertise with over 100+ years of cumulative
-              experience
-            </span>
+          <div class="icon-container">
+            <v-img
+              src="/Homepage/OurExperties/sc-experties.png"
+              height="120px"
+              contain
+            >
+            </v-img>
+          </div>
+          <div class="content-container">
+            <div class="title">
+              <h3>Supply Chain Expertise</h3>
+            </div>
+            <div class="description">
+              <span
+                >Industry based expertise with over 100+ years of cumulative
+                experience
+              </span>
+            </div>
           </div>
         </div>
-        <v-btn class="button primary">Talk to an Expert</v-btn>
+        <div class="action-container">
+          <v-btn class="button primary">Talk to an Expert</v-btn>
+        </div>
       </div>
     </div>
   </div>
@@ -79,6 +99,9 @@
   align-items: center;
   justify-content: center;
   background-color: #0c0c0c;
+  background-image: url("/Common/background-grid-top.png");
+  background-position: top;
+  background-size: contain;
 
   .content-container {
     display: flex;
@@ -94,7 +117,6 @@
       flex-direction: column;
       justify-content: center;
       padding-right: 4rem;
-      //   border: 1px solid gray;
 
       .heading {
         display: flex;
@@ -138,9 +160,61 @@
         display: flex;
         width: 100%;
         height: 25%;
-        gap: 50px;
         align-items: center;
         justify-content: center;
+
+        .icon-container {
+          display: flex;
+          width: 20%;
+          height: 100%;
+          align-items: center;
+          justify-content: center;
+          // border: 1px solid gray;
+          overflow: hidden;
+          transition: all 2s ease;
+
+          background-image: url();
+
+          &:hover {
+            transform: rotate(90deg);
+          }
+        }
+        .content-container {
+          display: flex;
+          width: 80%;
+          height: 100%;
+          flex-direction: column;
+          justify-content: center;
+          // border: 1px solid gray;
+
+          .title {
+            display: flex;
+            width: 100%;
+            margin-bottom: 5px;
+
+            h3 {
+              font-size: 36px;
+              font-weight: 500;
+            }
+          }
+          .description {
+            display: flex;
+            width: 100%;
+
+            span {
+              color: #9c9c9c;
+              font-size: 16px;
+            }
+          }
+        }
+      }
+
+      .action-container {
+        // border: 1px solid gray;
+        display: flex;
+        align-items: center;
+        width: 60%;
+        height: 100px;
       }
     }
 
