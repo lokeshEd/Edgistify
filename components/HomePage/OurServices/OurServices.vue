@@ -134,11 +134,18 @@
       align-items: center;
       justify-content: center;
       cursor: pointer;
+      color: #4e4e4e;
 
       border-bottom: 2px solid #4e4e4e;
+
+      &:hover {
+        color: #fff;
+        // border-color: #fff;
+      }
       &.selected {
         border-color: #00a699;
         border-width: 3px;
+        color: #00a699;
       }
     }
   }
@@ -151,7 +158,7 @@
 
     .content-text {
       display: flex;
-      width: 35%;
+      width: 40%;
       height: 90%;
       flex-direction: column;
       // align-items: center;
@@ -191,6 +198,7 @@
         span {
           font-size: 52px;
           line-height: 70px;
+          font-family: 'NotoSerif';
         }
 
         &.logistic-cost {
@@ -200,16 +208,15 @@
     }
     .content-image {
       display: flex;
-      width: 65%;
+      width: 60%;
       height: 80%;
       align-items: center;
       justify-content: center;
 
       .image-container {
+        padding-left: 10px;
         display: flex;
-        // background-color: #00a699;
         width: 100%;
-        height: 100%;
       }
     }
   }

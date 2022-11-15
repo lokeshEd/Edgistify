@@ -90,6 +90,9 @@
         </div>
       </div>
       <div class="description-container">
+        <div class="floating-text">
+          <span>A new age 3PL service provider</span>
+        </div>
         <!-- <v-btn class="button primary">Contact Us</v-btn> -->
       </div>
     </div>
@@ -252,7 +255,7 @@
     justify-content: center;
     flex-direction: column;
     background-color: #0c0c0c;
-    
+
     .heading-container {
       display: flex;
       width: 100%;
@@ -260,7 +263,7 @@
       align-items: center;
       justify-content: center;
       background-color: #fff;
-      
+
       .heading {
         display: flex;
         width: 20%;
@@ -268,9 +271,9 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        color: #0C0C0C;
+        color: #0c0c0c;
         border-left: 1px solid #8d8d8d;
-        
+
         &:first-child {
           border: none;
         }
@@ -302,6 +305,21 @@
 
       .button {
         margin-top: 20%;
+      }
+
+      .floating-text {
+        position: absolute;
+        display: flex;
+        width: 300%;
+        align-items: center;
+        overflow: hidden;
+
+        span {
+          font-size: 82px;
+          font-weight: 500;
+          font-family: "NotoSerif";
+          color: #FFFFFF;
+        }
       }
     }
   }
