@@ -167,11 +167,13 @@
       .heading {
         display: flex;
         min-height: 150px;
+        padding-right: 16px;
 
         h2 {
           font-size: 51px;
           font-family: "Notoserif";
           line-height: 70px;
+          
         }
       }
       .content {
