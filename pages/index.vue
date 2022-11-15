@@ -90,14 +90,14 @@
         </div>
       </div>
       <div class="description-container">
-        <v-btn class="button primary">Contact Us</v-btn>
+        <!-- <v-btn class="button primary">Contact Us</v-btn> -->
       </div>
     </div>
     <TrustedBrands />
     <OurServices />
     <OurNetworks />
     <OurExperties />
-    <OurAwards />
+    <!-- <OurAwards /> -->
     <OurReach />
   </div>
 </template>
@@ -136,7 +136,7 @@
       .heading-container {
         display: flex;
         // border: 1px solid grey;
-        width: 65%;
+        width: 70%;
         height: 100%;
         align-items: center;
 
@@ -169,7 +169,7 @@
 
       .description-container {
         display: flex;
-        width: 35%;
+        width: 30%;
         height: 100%;
         align-items: center;
         justify-content: center;
@@ -179,7 +179,7 @@
           width: 100%;
           align-items: flex-end;
           justify-content: center;
-          padding: 0 4rem;
+          padding: 0 80px;
           margin-right: 2rem;
           height: 25%;
           color: #8d8d8d;

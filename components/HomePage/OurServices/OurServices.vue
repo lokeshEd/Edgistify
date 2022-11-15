@@ -25,12 +25,20 @@
     </div>
     <div v-if="selected === 'Logistics'" class="content-container">
       <div class="content-text">
-        <h2>Full suite of logistics services</h2>
-        <p>
-          Edgistify bridges the broken links in your supply chain. We provide
-          operations, distribution, infrastructure & consultation solutions
-          based on your requirements.
-        </p>
+        <div class="heading">
+          <h2>Full suite of logistics services</h2>
+        </div>
+        <div class="content">
+          <p>
+            Edgistify bridges the broken links in your supply chain. We provide
+            operations, distribution, infrastructure & consultation solutions
+            based on your requirements.
+          </p>
+        </div>
+        <div class="stat-container logistic-cost">
+          <span>15 %</span>
+        </div>
+        <p>Reduction in logistics cost</p>
       </div>
       <div class="content-image">
         <div class="image-container">
@@ -44,11 +52,19 @@
     </div>
     <div v-if="selected === 'Technology'" class="content-container">
       <div class="content-text">
-        <h2>Technology-driven logistics solutions</h2>
-        <p>
-          Edgistify leverages advanced technology to manage your logistics.
-          Automate & Integrate your marketplaces, carriers & ERP with EdgeOS
-        </p>
+        <div class="heading">
+          <h2>Technology-driven logistics solutions</h2>
+        </div>
+        <div class="content">
+          <p>
+            Edgistify leverages advanced technology to manage your logistics.
+            Automate & Integrate your marketplaces, carriers & ERP with EdgeOS
+          </p>
+        </div>
+        <div class="stat-container">
+          <span>30 %</span>
+        </div>
+        <p>Improvement in warehouse operations</p>
       </div>
       <div class="content-image">
         <div class="image-container">
@@ -62,12 +78,20 @@
     </div>
     <div v-if="selected === 'Fulfillment'" class="content-container">
       <div class="content-text">
-        <h2>Deliver customer satisfaction with speedy fulfillment</h2>
-        <p>
-          Edgistify enables hyperlocal, same day & next day delivery with the
-          help of robust warehousing & dark store network across all metro &
-          tier 2-3 cities.
-        </p>
+        <div class="heading">
+          <h2>Deliver customer satisfaction with speedy fulfillment</h2>
+        </div>
+        <div class="content">
+          <p>
+            Edgistify enables hyperlocal, same day & next day delivery with the
+            help of robust warehousing & dark store network across all metro &
+            tier 2-3 cities.
+          </p>
+        </div>
+        <div class="stat-container">
+          <span>99 %</span>
+        </div>
+        <p>TAT Accuracy</p>
       </div>
       <div class="content-image">
         <div class="image-container">
@@ -92,6 +116,9 @@
   flex-direction: column;
   background-color: #0c0c0c;
   padding: 0 94px;
+  background-image: url("/Homepage/OurServices/background-grid.png");
+  background-position: bottom;
+  background-size: contain;
 
   .section-container {
     display: flex;
@@ -127,18 +154,48 @@
       width: 35%;
       height: 90%;
       flex-direction: column;
-      align-items: center;
-      justify-content: space-evenly;
-      h2 {
-        font-size: 51px;
-        font-family: "Notoserif";
-        line-height: 70px;
+      // align-items: center;
+      // justify-content: space-evenly;
+
+      .heading {
+        display: flex;
+        min-height: 150px;
+
+        h2 {
+          font-size: 51px;
+          font-family: "Notoserif";
+          line-height: 70px;
+        }
+      }
+      .content {
+        display: flex;
+        margin: 35px 0;
       }
       p {
         font-size: 16px;
         font-weight: 300;
         font-family: "Outfit";
         padding-right: 5rem;
+      }
+
+      .stat-container {
+        display: flex;
+        width: 100%;
+        height: 50px;
+        align-self: flex-end;
+        align-items: center;
+        padding-left: 12px;
+        border-left: 4px solid #00a699;
+        margin: 5px 0;
+
+        span {
+          font-size: 52px;
+          line-height: 70px;
+        }
+
+        &.logistic-cost {
+          margin-top: 65px;
+        }
       }
     }
     .content-image {

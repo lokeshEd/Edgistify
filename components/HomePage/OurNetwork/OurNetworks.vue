@@ -71,13 +71,16 @@
   justify-content: center;
   height: 858px;
   background-color: #f3f3f5;
+  width: 100%;
+  padding: 0 94px;
 
   .heading {
+    
     display: flex;
     width: 100%;
     height: 20%;
     align-items: center;
-    justify-content: center;
+    // justify-content: center;
 
     h2 {
       color: #1e1e1e;
@@ -92,6 +95,7 @@
     height: 10%;
     align-items: center;
     justify-content: center;
+    
 
     .section {
       display: flex;
@@ -119,6 +123,7 @@
   }
 
   .sectors-cards {
+    border: 1px solid grey;
     display: flex;
     flex-direction: column;
     align-items: center;
