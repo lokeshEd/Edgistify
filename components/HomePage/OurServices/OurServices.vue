@@ -216,7 +216,7 @@
       justify-content: center;
 
       .image-container {
-        padding-left: 10px;
+        padding-left: 40px;
         display: flex;
         width: 100%;
       }
