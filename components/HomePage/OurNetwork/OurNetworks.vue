@@ -25,82 +25,37 @@
     <div v-if="selected === 'Sectors'" class="sectors-cards">
       <div class="cards-container">
         <div class="card">
-          <div class="icon-container">
-            <v-img
-              src="/Homepage/OurNetwork/store-icon.png"
-              width="100px"
-              contain
-            />
-          </div>
+          <div class="icon-container"></div>
           <div class="title">E-commerce</div>
         </div>
         <div class="card">
-          <div class="icon-container">
-            <v-img
-              src="/Homepage/OurNetwork/store-icon.png"
-              width="100px"
-              contain
-            />
-          </div>
+          <div class="icon-container"></div>
           <div class="title">FMCG</div>
         </div>
         <div class="card">
-          <div class="icon-container">
-            <v-img
-              src="/Homepage/OurNetwork/store-icon.png"
-              width="100px"
-              contain
-            />
-          </div>
+          <div class="icon-container"></div>
           <div class="title">E-commerce</div>
         </div>
         <div class="card">
-          <div class="icon-container">
-            <v-img
-              src="/Homepage/OurNetwork/store-icon.png"
-              width="100px"
-              contain
-            />
-          </div>
+          <div class="icon-container"></div>
           <div class="title">E-commerce</div>
         </div>
       </div>
       <div class="cards-container">
         <div class="card">
-          <div class="icon-container">
-            <v-img
-              src="/Homepage/OurNetwork/store-icon.png"
-              width="100px"
-              contain
-            />
-          </div>
+          <div class="icon-container"></div>
           <div class="title">Automotive</div>
-        </div><div class="card">
-          <div class="icon-container">
-            <v-img
-              src="/Homepage/OurNetwork/store-icon.png"
-              width="100px"
-              contain
-            />
-          </div>
+        </div>
+        <div class="card">
+          <div class="icon-container"></div>
           <div class="title">E-commerce</div>
-        </div><div class="card">
-          <div class="icon-container">
-            <v-img
-              src="/Homepage/OurNetwork/store-icon.png"
-              width="100px"
-              contain
-            />
-          </div>
+        </div>
+        <div class="card">
+          <div class="icon-container"></div>
           <div class="title">E-commerce</div>
-        </div><div class="card">
-          <div class="icon-container">
-            <v-img
-              src="/Homepage/OurNetwork/store-icon.png"
-              width="100px"
-              contain
-            />
-          </div>
+        </div>
+        <div class="card">
+          <div class="icon-container"></div>
           <div class="title">E-commerce</div>
         </div>
       </div>
@@ -213,13 +168,40 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background-color: #F3F3F5;
+        background-color: #f3f3f5;
+        transition: all 0.5s ease-in-out;
 
-        .title{
+        .icon-container {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          height: 70%;
+          background-image: url("/Homepage/OurNetwork/store-icon.png");
+          background-size: 100px;
+          background-position: center;
+        }
+
+        .title {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          height: 30%;
           font-weight: 500;
           font-size: 16px;
-          margin-top: 20px;
           color: #000000;
+        }
+
+        &:hover {
+          background-color: #000;
+          .icon-container {
+            background-image: url("/Homepage/OurNetwork/store-icon-focus.png");
+          }
+
+          .title {
+            color: #fff;
+          }
         }
       }
     }
