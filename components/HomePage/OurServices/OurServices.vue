@@ -35,7 +35,7 @@
             based on your requirements.
           </p>
         </div>
-        <div class="stat-container logistic-cost">
+        <div class="stat-container">
           <span>15 %</span>
         </div>
         <p>Reduction in logistics cost</p>
@@ -79,7 +79,7 @@
     <div v-if="selected === 'Fulfillment'" class="content-container">
       <div class="content-text">
         <div class="heading">
-          <h2>Deliver customer satisfaction with speedy fulfillment</h2>
+          <h2>Ultra fast fulfillment services</h2>
         </div>
         <div class="content">
           <p>
@@ -123,7 +123,7 @@
   .section-container {
     display: flex;
     width: 100%;
-    height: 10%;
+    height: 45px;
     align-items: center;
     justify-content: center;
 
@@ -140,7 +140,7 @@
 
       &:hover {
         color: #fff;
-        // border-color: #fff;
+        border-color: #fff;
       }
       &.selected {
         border-color: #00a699;
@@ -173,7 +173,6 @@
           font-size: 51px;
           font-family: "Notoserif";
           line-height: 70px;
-          
         }
       }
       .content {
@@ -196,15 +195,11 @@
         padding-left: 12px;
         border-left: 4px solid #00a699;
         margin: 5px 0;
-
+        margin-top: 65px;
         span {
           font-size: 52px;
           line-height: 70px;
-          font-family: 'NotoSerif';
-        }
-
-        &.logistic-cost {
-          margin-top: 65px;
+          font-family: "NotoSerif";
         }
       }
     }

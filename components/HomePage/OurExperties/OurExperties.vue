@@ -171,12 +171,12 @@
           justify-content: center;
           // border: 1px solid gray;
           overflow: hidden;
-          transition: all 2s ease;
+          transition: all 15s ease;
 
-          background-image: url();
+          // background-image: url();
 
           &:hover {
-            transform: rotate(90deg);
+            transform: rotate(720deg);
           }
         }
         .content-container {
