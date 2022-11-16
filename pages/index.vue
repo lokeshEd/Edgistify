@@ -4,7 +4,12 @@
       <div class="title">
         <div class="heading-container">
           <div class="heading">
-            <h1>
+            <h1
+              data-aos="fade-up"
+              data-aos-once="true"
+              data-aos-easing="ease-in"
+              data-aos-duration="550"
+            >
               New Age Tech Driven<br />
               <b><span> 3PL</span> Service Provider</b>
             </h1>
@@ -12,7 +17,12 @@
         </div>
         <div class="description-container">
           <div class="description">
-            <p>
+            <p
+              data-aos="fade-left"
+              data-aos-once="true"
+              data-aos-easing="ease-in"
+              data-aos-duration="700"
+            >
               Edgistify offers End to End supply chain and logistics solutions
               for <b>B2B</b> and <b>B2C</b> companies across different
               industries PAN India
@@ -70,30 +80,66 @@
       <div class="heading-container">
         <div class="heading">
           <h2>1 lac<span>+</span></h2>
-          <span>daily orders</span>
+          <span
+            data-aos="zoom-out"
+            data-aos-once="true"
+            data-aos-easing="ease-in"
+            data-aos-duration="600"
+            >daily orders</span
+          >
         </div>
         <div class="heading">
           <h2>75<span>+</span></h2>
-          <span>marketplaces</span>
+          <span
+            data-aos="zoom-out"
+            data-aos-once="true"
+            data-aos-easing="ease-in"
+            data-aos-duration="700"
+            >marketplaces</span
+          >
         </div>
         <div class="heading">
           <h2>150<span>+</span></h2>
-          <span>cities</span>
+          <span
+            data-aos="zoom-out"
+            data-aos-once="true"
+            data-aos-easing="ease-in"
+            data-aos-duration="800"
+            >cities</span
+          >
         </div>
         <div class="heading">
           <h2>300<span>+</span></h2>
-          <span>warehouses</span>
+          <span
+            data-aos="zoom-outt"
+            data-aos-once="true"
+            data-aos-easing="ease-in"
+            data-aos-duration="900"
+            >warehouses</span
+          >
         </div>
         <div class="heading">
           <h2>50<span>+</span></h2>
-          <span>customers</span>
+          <span
+            data-aos="zoom-out"
+            data-aos-once="true"
+            data-aos-easing="ease-in"
+            data-aos-duration="1000"
+            >customers</span
+          >
         </div>
       </div>
       <div class="description-container">
         <div class="floating-text">
-          <span>A new age 3PL service provider</span>
+          <span
+            data-aos="slide-left"
+            data-aos-once="true"
+            data-aos-easing="ease-in"
+            data-aos-duration="2000"
+            >A new age 3PL service provider</span
+          >
         </div>
-        <!-- <v-btn class="button primary">Contact Us</v-btn> -->
+        <v-btn class="button primary">Book your Space</v-btn>
       </div>
     </div>
     <TrustedBrands />
@@ -104,8 +150,6 @@
     <OurReach />
   </div>
 </template>
-
-<script></script>
 
 <style lang="scss" scoped>
 .homepage-container {
@@ -310,15 +354,18 @@
       .floating-text {
         position: absolute;
         display: flex;
-        width: 300%;
+        width: 200%;
         align-items: center;
+        justify-content: center;
         overflow: hidden;
 
         span {
+          position: relative;
           font-size: 82px;
           font-weight: 500;
           font-family: "NotoSerif";
-          color: #FFFFFF;
+          color: #ffffff;
+          overflow: hidden;
         }
       }
     }
@@ -363,6 +410,8 @@ import OurExperties from "../components/HomePage/OurExperties/OurExperties.vue";
 import OurAwards from "../components/HomePage/OurAwards/OurAwards.vue";
 import OurReach from "../components/HomePage/OurReach/OurReach.vue";
 
+import aosMixin from "~/mixins/aos";
+
 export default {
   components: {
     TrustedBrands,
@@ -372,5 +421,6 @@ export default {
     OurAwards,
     OurReach,
   },
+  mixins: [aosMixin],
 };
 </script>
