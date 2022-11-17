@@ -94,13 +94,16 @@
   height: 460px;
   align-items: center;
   justify-content: center;
-  background-color: #0c0c0c;
 
   .footer-content {
     display: flex;
     width: 100%;
     height: 90%;
     align-items: flex-end;
+    background-color: #0c0c0c;
+    background-image: url("/Common/footer-background-grid.png");
+    background-size: contain;
+    background-position-x: right;
 
     .logo-container {
       display: flex;

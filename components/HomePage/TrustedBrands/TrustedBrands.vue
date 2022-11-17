@@ -4,28 +4,69 @@
       <h2>Trusted by over more than 50<span>+</span> Brands</h2>
     </div>
     <div class="icons-container">
-      <div class="icons"></div>
-      <div class="icons"></div>
-      <div class="icons"></div>
-      <div class="icons"></div>
-      <div class="icons"></div>
-      <div class="icons"></div>
-      <div class="icons"></div>
-      <div class="icons"></div>
-      <div class="icons"></div>
-      <div class="icons"></div>
+      <div class="icons">
+        <v-img src="/Brands/jio.png" class="img" contain />
+      </div>
+      <div class="icons">
+        <v-img src="/Brands/pidilite.png" class="img" contain />
+      </div>
+
+      <div class="icons">
+        <v-img src="/Brands/flipkart.png" class="img" contain />
+      </div>
+      <div class="icons">
+        <v-img src="/Brands/shiprocket.png" class="img" contain />
+      </div>
+      <div class="icons">
+        <v-img src="/Brands/zepto.png" class="img" contain />
+      </div>
+      <div class="icons">
+        <v-img src="/Brands/waaree.png" class="img" contain />
+      </div>
+      <div class="icons">
+        <v-img src="/Brands/pickrr.png" class="img" contain />
+      </div>
+      <div class="icons">
+        <v-img src="/Brands/kult.png" class="img" contain />
+      </div>
+      <div class="icons">
+        <v-img src="/Brands/apnamart.png" class="img" contain />
+      </div>
+      <div class="icons">
+        <v-img src="/Brands/marico.png" class="img" contain />
+      </div>
     </div>
     <div class="icons-container">
-      <div class="icons"></div>
-      <div class="icons"></div>
-      <div class="icons"></div>
-      <div class="icons"></div>
-      <div class="icons"></div>
-      <div class="icons"></div>
-      <div class="icons"></div>
-      <div class="icons"></div>
-      <div class="icons"></div>
-      <div class="icons"></div>
+      <div class="icons">
+        <v-img src="/Brands/kisanserv.png" class="img" contain />
+      </div>
+      <div class="icons">
+        <v-img src="/Brands/pitstop.png" class="img" contain />
+      </div>
+      <div class="icons">
+        <v-img src="/Brands/uddan.png" class="img" contain />
+      </div>
+      <div class="icons">
+        <v-img src="/Brands/pureplay.png" class="img" contain />
+      </div>
+      <div class="icons">
+        <v-img src="/Brands/shopkirana.png" class="img" contain />
+      </div>
+      <div class="icons">
+        <v-img src="/Brands/anveshan.png" class="img" contain />
+      </div>
+      <div class="icons">
+        <v-img src="/Brands/super.png" class="img" contain />
+      </div>
+      <div class="icons">
+        <v-img src="/Brands/blinkit.png" class="img" contain />
+      </div>
+      <div class="icons">
+        <v-img src="/Brands/flo.png" class="img" contain />
+      </div>
+      <div class="icons">
+        <v-img src="/Brands/enrich.png" class="img" contain />
+      </div>
     </div>
   </div>
 </template>
@@ -68,8 +109,19 @@
       display: flex;
       width: 80px;
       height: 80px;
-      border: 1px solid gray;
-      border-radius: 4px;
+
+      .img {
+        -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(100%);
+        transition: 0.2s all ease-in-out;
+      }
+
+      &:hover {
+        .img {
+          -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+          filter: grayscale(0%);
+        }
+      }
     }
   }
 }

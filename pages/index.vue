@@ -148,6 +148,9 @@
     <OurExperties />
     <!-- <OurAwards /> -->
     <OurReach />
+    <OurStories />
+    <OurInsights />
+    <OurMessage />
   </div>
 </template>
 
@@ -365,7 +368,6 @@
           font-weight: 500;
           font-family: "NotoSerif";
           color: #ffffff;
-          overflow: hidden;
         }
       }
     }
@@ -409,6 +411,9 @@ import OurNetworks from "../components/HomePage/OurNetwork/OurNetworks.vue";
 import OurExperties from "../components/HomePage/OurExperties/OurExperties.vue";
 import OurAwards from "../components/HomePage/OurAwards/OurAwards.vue";
 import OurReach from "../components/HomePage/OurReach/OurReach.vue";
+import OurStories from "../components/HomePage/OurStories/OurStories.vue";
+import OurInsights from "../components/HomePage/OurInsights/OurInsights.vue";
+import OurMessage from "../components/HomePage/OurMessage/OurMessage.vue";
 
 import aosMixin from "~/mixins/aos";
 
@@ -420,6 +425,9 @@ export default {
     OurExperties,
     OurAwards,
     OurReach,
+    OurStories,
+    OurInsights,
+    OurMessage,
   },
   mixins: [aosMixin],
 };
