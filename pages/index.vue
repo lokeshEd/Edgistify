@@ -149,6 +149,8 @@
     <!-- <OurAwards /> -->
     <OurReach />
     <OurStories />
+    <OurPresence />
+    <Testimonials />
     <OurInsights />
     <OurMessage />
   </div>
@@ -414,6 +416,8 @@ import OurReach from "../components/HomePage/OurReach/OurReach.vue";
 import OurStories from "../components/HomePage/OurStories/OurStories.vue";
 import OurInsights from "../components/HomePage/OurInsights/OurInsights.vue";
 import OurMessage from "../components/HomePage/OurMessage/OurMessage.vue";
+import OurPresence from "../components/HomePage/OurPresence/OurPresence.vue";
+import Testimonials from "../components/HomePage/Testimonials/Testimonials.vue";
 
 import aosMixin from "~/mixins/aos";
 
@@ -426,6 +430,8 @@ export default {
     OurAwards,
     OurReach,
     OurStories,
+    OurPresence,
+    Testimonials,
     OurInsights,
     OurMessage,
   },
