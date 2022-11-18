@@ -192,15 +192,15 @@
         height: fit-content;
         flex-direction: column;
         padding-left: 12px;
-        border-left: 4px solid #00a699;
-        margin: 5px 0;
-        margin-top: 65px;
+        border-left: 5px solid #00a699;
+        margin-top: 80px;
         justify-content: flex-start;
-        
+
         span {
           font-size: 64px;
           font-weight: 500;
-          line-height: 88px;
+          line-height: 50px;
+          margin-bottom: 12px;
           font-family: "NotoSerif";
         }
       }

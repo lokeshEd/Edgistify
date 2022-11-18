@@ -70,7 +70,7 @@
     }
     .sub-heading-container {
       display: flex;
-      width: 100%;
+      width: 85%;
       height: 130px;
 
       span {
@@ -114,6 +114,7 @@
     background-image: url("/Homepage/OurReach/hand.png");
     background-position: bottom;
     background-size: 500px;
+    background-position-y: 206px;
 
     .img {
       width: 200px;

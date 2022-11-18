@@ -77,10 +77,11 @@
       .option {
         display: flex;
         align-items: center;
-        justify-content: center;
+        // justify-content: center;
         width: 50%;
         height: 25%;
         border-top: 1px solid #8d8d8d;
+        padding-left: 60px;
 
         :last-child {
           border-bottom: none;

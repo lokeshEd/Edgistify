@@ -93,7 +93,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 858px;
+  height: 860px;
   background-color: #fff;
   width: 100%;
   padding: 0 94px;
@@ -101,7 +101,7 @@
   .heading {
     display: flex;
     width: 100%;
-    height: 20%;
+    height: 14%;
     align-items: center;
     // justify-content: center;
 
@@ -115,7 +115,7 @@
   .sections {
     display: flex;
     width: 100%;
-    height: 10%;
+    height: 8%;
     align-items: center;
     justify-content: center;
 
@@ -151,7 +151,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 60%;
+    height: 68%;
     padding-top: 80px;
 
     .cards-container {
@@ -211,7 +211,7 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    height: 60%;
+    height: 68%;
     padding-top: 80px;
 
     .cards-container {

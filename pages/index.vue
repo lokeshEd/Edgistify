@@ -234,9 +234,9 @@
           width: 100%;
           align-items: flex-end;
           justify-content: center;
-          padding: 0 80px;
+          padding: 20px 70px;
           margin-right: 2rem;
-          height: 25%;
+          height: 40%;
           color: #8d8d8d;
           font-size: 16px;
           font-weight: 500;

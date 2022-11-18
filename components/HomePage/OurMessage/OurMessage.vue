@@ -21,6 +21,9 @@
   background-color: #00a699;
   align-items: center;
   justify-content: center;
+  background-image: url("/Homepage/OurMessage/Vector.png");
+  background-position: center;
+  background-size: cover;
 
   .image-container {
     display: flex;
@@ -60,6 +63,7 @@
     span {
       font-size: 32px;
       line-height: 57px;
+      font-weight: 300;
     }
   }
 }

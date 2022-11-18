@@ -16,7 +16,7 @@
           </span>
         </div>
         <div class="image-container">
-          <v-img src="/Homepage/OurExperties/hand.png" height="230px" contain>
+          <v-img src="/Homepage/OurExperties/hand.png" height="190px" contain>
           </v-img>
         </div>
       </div>
@@ -25,6 +25,7 @@
           <div class="icon-container">
             <v-img
               src="/Homepage/OurExperties/wh-network.png"
+              class="img"
               height="65px"
               contain
             >
@@ -46,6 +47,7 @@
           <div class="icon-container">
             <v-img
               src="/Homepage/OurExperties/tech-platform.png"
+              class="img"
               height="65px"
               contain
             >
@@ -64,10 +66,11 @@
           </div>
         </div>
         <div class="item-container">
-          <div class="icon-container">
+          <div class="icon-container sc">
             <v-img
-              src="/Homepage/OurExperties/sc-experties.png"
-              height="120px"
+              src="/Homepage/OurExperties/sc.png"
+              class="img"
+              height="68px"
               contain
             >
             </v-img>
@@ -124,6 +127,7 @@
         height: 20%;
         align-items: center;
         margin-bottom: 35px;
+        margin-top: 87px;
 
         h2 {
           font-size: 42px;
@@ -133,10 +137,10 @@
       }
       .sub-heading {
         display: flex;
-        width: 100%;
+        width: 90%;
         height: 20%;
         align-items: center;
-        margin-bottom: 15px;
+        margin-bottom: 35px;
 
         span {
           font-size: 16px;
@@ -145,9 +149,9 @@
       }
       .image-container {
         display: flex;
-        width: 100%;
+        width: 80%;
         height: 40%;
-        align-items: center;
+        // align-items: center;
       }
     }
 
@@ -173,12 +177,20 @@
           justify-content: center;
           // border: 1px solid gray;
           overflow: hidden;
-          transition: all 10s ease;
 
           // background-image: url();
 
-          &:hover {
-            transform: rotate(720deg);
+          .img {
+            transition: all 10s ease;
+            &:hover {
+              transform: rotate(720deg);
+            }
+          }
+
+          &.sc {
+            background-image: url("/Homepage/OurExperties/person.png");
+            background-position: center;
+            background-size: 20px;
           }
         }
         .content-container {
