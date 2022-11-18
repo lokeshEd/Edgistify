@@ -180,6 +180,9 @@
     background-color: #0c0c0c;
     flex-direction: column;
     padding-top: 90px;
+    background-image: url("/Homepage/background.png");
+    background-size: cover;
+    background-position-x: center;
 
     .title {
       display: flex;
@@ -248,7 +251,6 @@
       flex-direction: column;
       align-items: center;
       justify-content: space-between;
-      // background: #00a699;
 
       .slide-items {
         display: flex;
@@ -311,7 +313,7 @@
       height: 25%;
       align-items: center;
       justify-content: center;
-      background-color: #fff;
+      background-color: #0c0c0c;
 
       .heading {
         display: flex;
@@ -320,7 +322,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        color: #0c0c0c;
+        color: #fff;
         border-left: 1px solid #8d8d8d;
 
         &:first-child {
@@ -387,6 +389,16 @@
     font-family: "NotoSerif";
     text-transform: capitalize;
     font-size: 16px;
+    font-weight: 800;
+
+    // .v-btn__content {
+    //   font-weight: bold;
+    //   font-family: "NotoSerif";
+    // }
+
+    span {
+      font-weight: 500 !important;
+    }
 
     &.primary {
       background-color: #00a699;

@@ -102,13 +102,13 @@
   .icons-container {
     display: flex;
     width: 100%;
-    height: 30%;
+    height: 29%;
     align-items: center;
     justify-content: space-between;
     .icons {
       display: flex;
-      width: 80px;
-      height: 80px;
+      width: 88px;
+      height: 77px;
 
       .img {
         -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */

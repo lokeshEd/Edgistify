@@ -51,7 +51,7 @@
               style="
                 max-width: 300px;
                 height: 40px;
-                border-radius: 3px 0 0 3px;
+                border-radius: 21px 0 0 21px;
                 font-size: 13px;
               "
               hide-spin-buttons
@@ -63,7 +63,7 @@
               depressed
               color="#00A699"
               style="
-                border-radius: 0 3px 3px 0;
+                border-radius: 0 21px 21px 0;
                 margin-left: 1px;
                 font-size: 13px;
                 text-transform: capitalize;

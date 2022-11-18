@@ -6,13 +6,7 @@
     <div class="content-container">
       <div class="content">
         <div class="source">Blog</div>
-        <div class="image-container">
-          <v-img
-            src="/Homepage/OurInsightes/inventory.png"
-            class="img"
-            contain
-          />
-        </div>
+        <div class="image-container"></div>
         <div class="news">
           We streamline logistics through tech-driven solutions, a robust
           network & consultancy approach. We design.
@@ -21,13 +15,7 @@
       </div>
       <div class="content">
         <div class="source">Media</div>
-        <div class="image-container">
-          <v-img
-            src="/Homepage/OurInsightes/inventory.png"
-            class="img"
-            contain
-          />
-        </div>
+        <div class="image-container"></div>
         <div class="news">
           We streamline logistics through tech-driven solutions, a robust
           network & consultancy approach. We design.
@@ -36,13 +24,7 @@
       </div>
       <div class="content">
         <div class="source">Case studies</div>
-        <div class="image-container">
-          <v-img
-            src="/Homepage/OurInsightes/inventory.png"
-            class="img"
-            contain
-          />
-        </div>
+        <div class="image-container"></div>
         <div class="news">
           We streamline logistics through tech-driven solutions, a robust
           network & consultancy approach. We design.
@@ -51,13 +33,7 @@
       </div>
       <div class="content">
         <div class="source">Videos</div>
-        <div class="image-container">
-          <v-img
-            src="/Homepage/OurInsightes/inventory.png"
-            class="img"
-            contain
-          />
-        </div>
+        <div class="image-container"></div>
         <div class="news">
           We streamline logistics through tech-driven solutions, a robust
           network & consultancy approach. We design.
@@ -119,7 +95,12 @@
       }
 
       .image-container {
-        margin-bottom: 20px;
+        display: flex;
+        width: 268px;
+        height: 180px;
+        background-image: url("/Homepage/OurInsightes/inventory.png");
+        background-size: contain;
+        transition: 0.2s all ease-in-out;
       }
       .news {
         font-size: 16px;
@@ -132,6 +113,16 @@
         line-height: 20px;
         margin-bottom: 20px;
         font-weight: 300;
+      }
+
+      &:hover {
+        color: #1e1e1e;
+        .action {
+          color: #00a699;
+        }
+        .image-container {
+          background-image: url("/Homepage/OurInsightes/inventory2.png");
+        }
       }
     }
   }

@@ -16,7 +16,7 @@
           </span>
         </div>
         <div class="image-container">
-          <v-img src="/Homepage/OurExperties/hand.png" height="180px" contain>
+          <v-img src="/Homepage/OurExperties/hand.png" height="230px" contain>
           </v-img>
         </div>
       </div>
@@ -123,6 +123,7 @@
         width: 100%;
         height: 20%;
         align-items: center;
+        margin-bottom: 35px;
 
         h2 {
           font-size: 42px;
@@ -135,6 +136,7 @@
         width: 100%;
         height: 20%;
         align-items: center;
+        margin-bottom: 15px;
 
         span {
           font-size: 16px;
@@ -171,7 +173,7 @@
           justify-content: center;
           // border: 1px solid gray;
           overflow: hidden;
-          transition: all 15s ease;
+          transition: all 10s ease;
 
           // background-image: url();
 
@@ -210,11 +212,11 @@
       }
 
       .action-container {
-        // border: 1px solid gray;
         display: flex;
         align-items: center;
         width: 60%;
         height: 100px;
+        padding-left: 40px;
       }
     }
 
@@ -230,6 +232,11 @@
       font-family: "NotoSerif";
       text-transform: capitalize;
       font-size: 16px;
+
+      .v-btn__content {
+        font-weight: bold;
+        font-family: "NotoSerif";
+      }
 
       &.primary {
         background-color: #00a699;

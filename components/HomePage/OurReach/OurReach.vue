@@ -32,7 +32,7 @@
       </div>
     </div>
     <div class="right-section-container">
-      <v-img src="/Homepage/OurReach/hand.png" height="500px" contain></v-img>
+      <v-img src="/Homepage/OurReach/circle.png" class="img" contain></v-img>
     </div>
   </div>
 </template>
@@ -58,7 +58,7 @@
     // border: 1px solid grey;
     .heading-container {
       display: flex;
-      width: 100%;
+      width: 80%;
       height: 160px;
 
       h2 {
@@ -71,7 +71,7 @@
     .sub-heading-container {
       display: flex;
       width: 100%;
-      height: 140px;
+      height: 130px;
 
       span {
         font-size: 16px;
@@ -109,10 +109,24 @@
   .right-section-container {
     display: flex;
     width: 50%;
-    height: 40%;
-    // align-items: center;
-    // padding-left: 300px;
+    height: 100%;
     padding-top: 238px;
+    background-image: url("/Homepage/OurReach/hand.png");
+    background-position: bottom;
+    background-size: 500px;
+
+    .img {
+      width: 200px;
+      height: 200px;
+      top: -114px;
+      left: -25px;
+      opacity: 0.2;
+      transition: all 0.8s ease;
+
+      &:hover {
+        opacity: 0.5;
+      }
+    }
   }
 }
 </style>

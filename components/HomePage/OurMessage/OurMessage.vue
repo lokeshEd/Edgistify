@@ -5,7 +5,7 @@
     </div>
     <div class="content-container">
       <h1>Simplify</h1>
-      <span>Simplify</span>
+      <span>your supply chain</span>
     </div>
     <div class="bottom image-container">
       <v-img src="/Homepage/OurMessage/bottom.svg" class="img" contain />

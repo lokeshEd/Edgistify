@@ -101,8 +101,12 @@
           width: 100px;
           height: 300px;
           top: 10px;
+          -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+          filter: grayscale(100%);
+          transition: 0.2s all ease-in-out;
         }
       }
+
       .content {
         display: flex;
         flex-direction: column;
@@ -112,6 +116,9 @@
         color: #0c0c0c;
         padding: 20px 40px;
         padding-left: 0;
+        background-image: url("/Homepage/Testimonials/quote.png");
+        background-position-y: 12px;
+        transition: 0.2s all ease-in-out;
 
         .title {
           font-size: 28px;
@@ -133,6 +140,18 @@
             color: #8d8d8d;
             font-weight: 300;
           }
+        }
+      }
+      &:hover {
+        .image-container {
+          .img {
+            -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+            filter: grayscale(0%);
+          }
+        }
+
+        .content {
+          background-image: url("/Homepage/Testimonials/quote2.png");
         }
       }
     }

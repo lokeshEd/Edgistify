@@ -53,7 +53,11 @@
             </div>
           </div>
         </li>
-        <li class="menu-item button secondry">
+        <li
+          class="menu-item button secondry"
+          :class="{ clicked: clicked }"
+          @click="() => onClick()"
+        >
           <span>Try<b> WMS</b></span>
         </li>
         <li class="menu-item button primary"><b>Contact Us</b></li>
@@ -419,6 +423,7 @@
         color: #fff;
         padding: 10px 40px;
         font-family: "NotoSerif";
+        font-weight: 500;
 
         &.primary {
           background-color: #00a699;
@@ -429,12 +434,17 @@
           }
         }
         &.secondry {
-          border: 1px solid #fff;
+          border: 2px solid #fff;
           background-color: transparent;
           margin-left: 72px;
 
           &:hover {
             border-color: #008b80;
+          }
+
+          &.clicked {
+            border-color: #008b80;
+            color: #008b80;
           }
 
           b {
@@ -454,6 +464,7 @@ export default {
       lastScrollPosition: 0,
       showDropdown: false,
       toggleTab: null,
+      clicked: false,
     };
   },
 
@@ -489,6 +500,10 @@ export default {
         this.showDropdown = true;
         this.toggleTab = tab;
       }
+    },
+
+    onClick() {
+      this.clicked = !this.clicked;
     },
   },
 };

@@ -37,8 +37,8 @@
         </div>
         <div class="stat-container">
           <span>15 %</span>
+          <p>Reduction in logistics cost</p>
         </div>
-        <p>Reduction in logistics cost</p>
       </div>
       <div class="content-image">
         <div class="image-container">
@@ -63,8 +63,8 @@
         </div>
         <div class="stat-container">
           <span>30 %</span>
+          <p>Improvement in warehouse operations</p>
         </div>
-        <p>Improvement in warehouse operations</p>
       </div>
       <div class="content-image">
         <div class="image-container">
@@ -90,8 +90,8 @@
         </div>
         <div class="stat-container">
           <span>99 %</span>
+          <p>TAT Accuracy</p>
         </div>
-        <p>TAT Accuracy</p>
       </div>
       <div class="content-image">
         <div class="image-container">
@@ -189,16 +189,18 @@
       .stat-container {
         display: flex;
         width: 100%;
-        height: 50px;
-        align-self: flex-end;
-        align-items: center;
+        height: fit-content;
+        flex-direction: column;
         padding-left: 12px;
         border-left: 4px solid #00a699;
         margin: 5px 0;
         margin-top: 65px;
+        justify-content: flex-start;
+        
         span {
-          font-size: 52px;
-          line-height: 70px;
+          font-size: 64px;
+          font-weight: 500;
+          line-height: 88px;
           font-family: "NotoSerif";
         }
       }

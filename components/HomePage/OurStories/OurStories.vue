@@ -54,7 +54,7 @@
   justify-content: center;
   flex-direction: column;
   background-color: #fff;
-  color: #1E1E1E;
+  color: #1e1e1e;
 
   .heading-container {
     display: flex;
@@ -104,6 +104,13 @@
         line-height: 20px;
         margin-bottom: 20px;
         font-weight: 300;
+      }
+
+      &:hover {
+        color: #1e1e1e;
+        .action {
+          color: #00a699;
+        }
       }
     }
   }
