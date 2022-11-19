@@ -88,7 +88,7 @@
       width: 857px;
       height: 116px;
       background-color: #fff;
-      margin-top: 350px;
+      margin-top: 360px;
       color: #00a699;
 
       .text {
