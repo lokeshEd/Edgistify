@@ -130,6 +130,9 @@
         </div>
       </div>
       <div class="description-container">
+        <video autoplay muted loop>
+          <source src="/Homepage/Videos/video.mp4" type="video/mp4" />
+        </video>
         <div class="floating-text">
           <span
             data-aos="slide-left"
@@ -175,6 +178,7 @@
     display: flex;
     width: 100%;
     height: calc(100vh - 115px);
+    min-height: 600px;
     align-items: center;
     justify-content: center;
     background-color: #0c0c0c;
@@ -350,9 +354,8 @@
       height: 75%;
       align-items: center;
       justify-content: center;
-      background-image: url("/Rectangle 84.png");
       background-position: center;
-      background-size: cover;
+      background-size: contain;
 
       .button {
         margin-top: 20%;
@@ -373,6 +376,15 @@
           font-family: "NotoSerif";
           color: #ffffff;
         }
+      }
+
+      position: relative;
+      overflow: hidden;
+
+      video {
+        position: absolute;
+        width: 100%;
+        height: auto;
       }
     }
   }

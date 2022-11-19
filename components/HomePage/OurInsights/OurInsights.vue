@@ -81,7 +81,7 @@
       flex-direction: column;
       height: fit-content;
       color: #8d8d8d;
-      padding: 0 35px;
+      padding: 0 30px;
       border-left: 1px solid #8d8d8d;
 
       :last-child {
