@@ -162,7 +162,7 @@
   align-items: center;
   justify-content: center;
   background-color: #f3f3f5;
-  overflow: hidden;
+  // overflow: hidden;
 
   h1 {
     font-size: 40px;
@@ -351,7 +351,7 @@
       justify-content: center;
       background-position: center;
       background-size: contain;
-      overflow-x: hidden;
+      overflow: hidden;
 
       .button {
         margin-top: 20%;

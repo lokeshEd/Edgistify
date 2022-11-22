@@ -84,6 +84,7 @@
 
     .overlap-cintainer {
       position: absolute;
+      z-index: 2;
       display: flex;
       width: 857px;
       height: 116px;
@@ -150,3 +151,5 @@
   }
 }
 </style>
+
+<script></script>
