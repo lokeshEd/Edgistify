@@ -134,13 +134,7 @@
           <source src="/Homepage/Videos/video.mp4" type="video/mp4" />
         </video>
         <div class="floating-text">
-          <span
-            data-aos="slide-left"
-            data-aos-once="true"
-            data-aos-easing="ease-in"
-            data-aos-duration="2000"
-            >A new age 3PL service provider</span
-          >
+          <span id="ft">A new age 3PL service provider</span>
         </div>
         <v-btn class="button primary">Book your Space</v-btn>
       </div>
@@ -168,6 +162,7 @@
   align-items: center;
   justify-content: center;
   background-color: #f3f3f5;
+  overflow: hidden;
 
   h1 {
     font-size: 40px;
@@ -356,6 +351,7 @@
       justify-content: center;
       background-position: center;
       background-size: contain;
+      overflow-x: hidden;
 
       .button {
         margin-top: 20%;
@@ -367,14 +363,15 @@
         width: 200%;
         align-items: center;
         justify-content: center;
-        overflow: hidden;
 
         span {
+          transition: all 5s ease;
           position: relative;
           font-size: 82px;
           font-weight: 500;
           font-family: "NotoSerif";
           color: #ffffff;
+          left: 90vw;
         }
       }
 
@@ -383,6 +380,8 @@
 
       video {
         position: absolute;
+        align-content: center;
+
         width: 100%;
         height: auto;
       }
@@ -460,5 +459,26 @@ export default {
     OurMessage,
   },
   mixins: [aosMixin],
+  mounted() {
+    window.addEventListener("scroll", this.onScroll);
+  },
+  beforeDestroy() {
+    window.removeEventListener("scroll", this.onScroll);
+  },
+  methods: {
+    onScroll(e) {
+      if (window.top.scrollY < 400) {
+        document.querySelector("#ft").style.left = "90vw";
+      }
+
+      if (window.top.scrollY > 400 && window.top.scrollY < 800) {
+        document.querySelector("#ft").style.left = "0vw";
+      }
+
+      if (window.top.scrollY > 800) {
+        document.querySelector("#ft").style.left = "-90vw";
+      }
+    },
+  },
 };
 </script>
