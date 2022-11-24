@@ -4,7 +4,11 @@
       <v-img src="/Homepage/OurMessage/top.svg" class="img" contain />
     </div>
     <div class="content-container">
-      <h1>Simplify</h1>
+      <div class="content-head">
+        <h1>Simplify</h1>
+        <h1>Strategize</h1>
+        <h1>Streamline</h1>
+      </div>
       <span>your supply chain</span>
       <div class="overlap-cintainer">
         <div class="text">
@@ -43,13 +47,13 @@
 
   .image-container {
     display: flex;
-    width: 30%;
+    width: 22.5%;
     height: 100%;
     &.top {
       align-items: flex-start;
 
       .img {
-        margin-left: -125px;
+        margin-left: -15px;
         height: 233px;
       }
     }
@@ -58,24 +62,61 @@
       justify-content: flex-end;
 
       .img {
-        margin-right: -130px;
+        margin-right: -20px;
         height: 215px;
       }
     }
   }
   .content-container {
     display: flex;
-    width: 40%;
+    width: 55%;
     flex-direction: column;
     align-items: center;
     height: 100%;
     position: relative;
 
-    h1 {
-      font-size: 144px;
-      line-height: 257px;
-      font-family: "NotoSerif";
+    .content-head {
+      display: flex;
+      margin-top: 60px;
+      align-items: center;
+      // justify-content: center;
+      flex-direction: column;
+      width: 100%;
+      height: 200px;
+      overflow: hidden;
+      // border: 1px solid black;
+
+      h1 {
+        font-size: 144px;
+        font-family: "NotoSerif";
+        animation: infinite slide-top 18s linear;
+
+        @keyframes slide-top {
+          0% {
+            transform: translateY(0%);
+          }
+          20% {
+            transform: translateY(0%);
+          }
+          30% {
+            transform: translateY(-100%);
+          }
+          50% {
+            transform: translateY(-100%);
+          }
+          60% {
+            transform: translateY(-200%);
+          }
+          80% {
+            transform: translateY(-200%);
+          }
+          90% {
+            transform: translateY(0%);
+          }
+        }
+      }
     }
+
     span {
       font-size: 32px;
       line-height: 57px;
