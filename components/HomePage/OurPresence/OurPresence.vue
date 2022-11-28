@@ -1,7 +1,14 @@
 <template>
   <div class="our-presence-container">
     <div class="heading-container">
-      <h2>We are EveryWare</h2>
+      <h2
+        data-aos="fade-up"
+        data-aos-once="true"
+        data-aos-easing="ease-in"
+        data-aos-duration="800"
+      >
+        We are EveryWare
+      </h2>
     </div>
     <div class="content-container">
       <div class="map-container">
@@ -9,16 +16,40 @@
       </div>
       <div class="options-container">
         <div class="option">
-          <span>All metros</span>
+          <span
+            data-aos="fade-up"
+            data-aos-once="true"
+            data-aos-easing="ease-in"
+            data-aos-duration="900"
+            >All metros</span
+          >
         </div>
         <div class="option">
-          <span>300+ Dark Stores</span>
+          <span
+            data-aos="fade-up"
+            data-aos-once="true"
+            data-aos-easing="ease-in"
+            data-aos-duration="1000"
+            >300+ Dark Stores</span
+          >
         </div>
         <div class="option">
-          <span>Tier 2 - Tier 3 Cities</span>
+          <span
+            data-aos="fade-up"
+            data-aos-once="true"
+            data-aos-easing="ease-in"
+            data-aos-duration="1100"
+            >Tier 2 - Tier 3 Cities</span
+          >
         </div>
         <div class="option">
-          <span>200+ Warehouse</span>
+          <span
+            data-aos="fade-up"
+            data-aos-once="true"
+            data-aos-easing="ease-in"
+            data-aos-duration="1200"
+            >200+ Warehouse</span
+          >
         </div>
       </div>
     </div>
@@ -100,3 +131,11 @@
   }
 }
 </style>
+
+<script>
+import aosMixin from "~/mixins/aos";
+
+export default {
+  mixins: [aosMixin],
+};
+</script>

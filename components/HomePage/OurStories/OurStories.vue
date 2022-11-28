@@ -1,10 +1,23 @@
 <template>
   <div class="our-stories-container">
     <div class="heading-container">
-      <h2>We are honored to be recognized for making an impact that matters</h2>
+      <h2
+        data-aos="fade-up"
+        data-aos-once="true"
+        data-aos-easing="ease-in"
+        data-aos-duration="800"
+      >
+        We are honored to be recognized for making an impact that matters
+      </h2>
     </div>
     <div class="content-container">
-      <div class="content">
+      <div
+        class="content"
+        data-aos="fade-up"
+        data-aos-once="true"
+        data-aos-easing="ease-in"
+        data-aos-duration="900"
+      >
         <div class="source">Silicon India</div>
         <div class="news">
           Edgistify’s SaaS based platform is holding the clean data for the
@@ -13,7 +26,13 @@
         </div>
         <div class="action">Read more</div>
       </div>
-      <div class="content">
+      <div
+        class="content"
+        data-aos="fade-up"
+        data-aos-once="true"
+        data-aos-easing="ease-in"
+        data-aos-duration="1000"
+      >
         <div class="source">ITL News</div>
         <div class="news">
           Edgistify got selected as one of the top 11 startups from 600+
@@ -22,7 +41,13 @@
         </div>
         <div class="action">Read more</div>
       </div>
-      <div class="content">
+      <div
+        class="content"
+        data-aos="fade-up"
+        data-aos-once="true"
+        data-aos-easing="ease-in"
+        data-aos-duration="1100"
+      >
         <div class="source">ClickPost</div>
         <div class="news">
           Clickposts lists Edgistify as one of the best 10 logistics startups in
@@ -31,7 +56,13 @@
         </div>
         <div class="action">Read more</div>
       </div>
-      <div class="content">
+      <div
+        class="content"
+        data-aos="fade-up"
+        data-aos-once="true"
+        data-aos-easing="ease-in"
+        data-aos-duration="1200"
+      >
         <div class="source">Logistic Insider</div>
         <div class="news">
           Logistics insider identifies Edgistify as one of the top 10 promising
@@ -116,3 +147,10 @@
   }
 }
 </style>
+<script>
+import aosMixin from "~/mixins/aos";
+
+export default {
+  mixins: [aosMixin],
+};
+</script>

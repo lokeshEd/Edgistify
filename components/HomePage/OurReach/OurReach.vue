@@ -2,10 +2,22 @@
   <div class="our-reach-container">
     <div class="left-section-container">
       <div class="heading-container">
-        <h2>Integrations that gets you ahead</h2>
+        <h2
+          data-aos="fade-up"
+          data-aos-once="true"
+          data-aos-easing="ease-in"
+          data-aos-duration="800"
+        >
+          Integrations that gets you ahead
+        </h2>
       </div>
       <div class="sub-heading-container">
-        <span>
+        <span
+          data-aos="fade-up"
+          data-aos-once="true"
+          data-aos-easing="ease-in"
+          data-aos-duration="900"
+        >
           Our WMS offers multichannel one-click integrations with leading
           marketplaces, courier services & ERPs. We integrate with 75+
           marketplaces and 20+ courier companies to help you manage & ship
@@ -13,7 +25,13 @@
         </span>
       </div>
       <div class="brands-container">
-        <div class="brands">
+        <div
+          class="brands"
+          data-aos="fade-up"
+          data-aos-once="true"
+          data-aos-easing="ease-in"
+          data-aos-duration="1000"
+        >
           <div class="brand"></div>
           <div class="brand"></div>
           <div class="brand"></div>
@@ -21,7 +39,13 @@
           <div class="brand"></div>
           <div class="brand"></div>
         </div>
-        <div class="brands">
+        <div
+          class="brands"
+          data-aos="fade-up"
+          data-aos-once="true"
+          data-aos-easing="ease-in"
+          data-aos-duration="1100"
+        >
           <div class="brand"></div>
           <div class="brand"></div>
           <div class="brand"></div>
@@ -131,3 +155,11 @@
   }
 }
 </style>
+
+<script>
+import aosMixin from "~/mixins/aos";
+
+export default {
+  mixins: [aosMixin],
+};
+</script>

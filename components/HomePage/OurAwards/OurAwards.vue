@@ -1,38 +1,75 @@
 <template>
   <div class="our-awards-container">
     <div class="heading-container">
-      <h2>We are honored to be recognized for making an impact that matters</h2>
+      <h2
+        data-aos="fade-up"
+        data-aos-once="true"
+        data-aos-easing="ease-in"
+        data-aos-duration="800"
+      >
+        We are honored to be recognized for making an impact that matters
+      </h2>
     </div>
     <div class="awards-container">
-      <div class="award-container">
+      <div
+        class="award-container"
+        data-aos="fade-up"
+        data-aos-once="true"
+        data-aos-easing="ease-in"
+        data-aos-duration="800"
+      >
         <div class="award-thumbnail"></div>
         <div class="award-details">
           <h4>Award</h4>
           <span>2022</span>
         </div>
       </div>
-      <div class="award-container">
+      <div
+        class="award-container"
+        data-aos="fade-up"
+        data-aos-once="true"
+        data-aos-easing="ease-in"
+        data-aos-duration="800"
+      >
         <div class="award-thumbnail"></div>
         <div class="award-details">
           <h4>Award</h4>
           <span>2022</span>
         </div>
       </div>
-      <div class="award-container">
+      <div
+        class="award-container"
+        data-aos="fade-up"
+        data-aos-once="true"
+        data-aos-easing="ease-in"
+        data-aos-duration="800"
+      >
         <div class="award-thumbnail"></div>
         <div class="award-details">
           <h4>Award</h4>
           <span>2022</span>
         </div>
       </div>
-      <div class="award-container">
+      <div
+        class="award-container"
+        data-aos="fade-up"
+        data-aos-once="true"
+        data-aos-easing="ease-in"
+        data-aos-duration="800"
+      >
         <div class="award-thumbnail"></div>
         <div class="award-details">
           <h4>Award</h4>
           <span>2022</span>
         </div>
       </div>
-      <div class="award-container">
+      <div
+        class="award-container"
+        data-aos="fade-up"
+        data-aos-once="true"
+        data-aos-easing="ease-in"
+        data-aos-duration="800"
+      >
         <div class="award-thumbnail"></div>
         <div class="award-details">
           <h4>Award</h4>
@@ -100,3 +137,11 @@
   }
 }
 </style>
+
+<script>
+import aosMixin from "~/mixins/aos";
+
+export default {
+  mixins: [aosMixin],
+};
+</script>

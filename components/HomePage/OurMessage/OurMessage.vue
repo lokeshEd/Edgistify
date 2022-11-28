@@ -1,5 +1,6 @@
 <template>
   <div class="our-message-container">
+    <v-img src="/Common/background-grid.png" class="backgroung-img" contain />
     <div class="top image-container">
       <v-img src="/Homepage/OurMessage/top.svg" class="img" contain />
     </div>
@@ -8,6 +9,7 @@
         <h1>Simplify</h1>
         <h1>Strategize</h1>
         <h1>Streamline</h1>
+        <h1>Simplify</h1>
       </div>
       <span>your supply chain</span>
       <div class="overlap-cintainer">
@@ -44,6 +46,14 @@
   background-image: url("/Homepage/OurMessage/Vector.png");
   background-position: center;
   background-size: cover;
+
+  .backgroung-img {
+    position: absolute;
+    width: 100%;
+    height: 420px;
+    display: block;
+    left: -85px;
+  }
 
   .image-container {
     display: flex;
@@ -89,7 +99,7 @@
       h1 {
         font-size: 144px;
         font-family: "NotoSerif";
-        animation: infinite slide-top 18s linear;
+        animation: infinite slide-top 10s linear;
 
         @keyframes slide-top {
           0% {
@@ -111,7 +121,10 @@
             transform: translateY(-200%);
           }
           90% {
-            transform: translateY(0%);
+            transform: translateY(-300%);
+          }
+          100% {
+            transform: translateY(-300%);
           }
         }
       }
@@ -193,4 +206,10 @@
 }
 </style>
 
-<script></script>
+<script>
+import aosMixin from "~/mixins/aos";
+
+export default {
+  mixins: [aosMixin],
+};
+</script>

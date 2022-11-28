@@ -1,9 +1,22 @@
 <template>
   <div class="trusted-brands-container">
     <div class="heading-container">
-      <h2>Trusted by over more than 50<span>+</span> Brands</h2>
+      <h2
+        data-aos="fade-up"
+        data-aos-once="true"
+        data-aos-easing="ease-in"
+        data-aos-duration="800"
+      >
+        Trusted by over more than 50<span>+</span> Brands
+      </h2>
     </div>
-    <div class="icons-container">
+    <div
+      class="icons-container"
+      data-aos="fade-up"
+      data-aos-once="true"
+      data-aos-easing="ease-in"
+      data-aos-duration="900"
+    >
       <div class="icons">
         <v-img src="/Brands/jio.png" class="img" contain />
       </div>
@@ -36,7 +49,13 @@
         <v-img src="/Brands/marico.png" class="img" contain />
       </div>
     </div>
-    <div class="icons-container">
+    <div
+      class="icons-container"
+      data-aos="fade-up"
+      data-aos-once="true"
+      data-aos-easing="ease-in"
+      data-aos-duration="1000"
+    >
       <div class="icons">
         <v-img src="/Brands/kisanserv.png" class="img" contain />
       </div>
@@ -126,3 +145,10 @@
   }
 }
 </style>
+<script>
+import aosMixin from "~/mixins/aos";
+
+export default {
+  mixins: [aosMixin],
+};
+</script>

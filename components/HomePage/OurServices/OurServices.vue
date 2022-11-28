@@ -1,6 +1,12 @@
 <template>
   <div class="our-services-container">
-    <div class="section-container">
+    <div
+      class="section-container"
+      data-aos="fade-up"
+      data-aos-once="true"
+      data-aos-easing="ease-in"
+      data-aos-duration="800"
+    >
       <div
         class="section"
         :class="{ selected: selected === 'Logistics' }"
@@ -26,22 +32,46 @@
     <div v-if="selected === 'Logistics'" class="content-container">
       <div class="content-text">
         <div class="heading">
-          <h2>Full suite of logistics services</h2>
+          <h2
+            data-aos="fade-up"
+            data-aos-once="true"
+            data-aos-easing="ease-in"
+            data-aos-duration="900"
+          >
+            Full suite of logistics services
+          </h2>
         </div>
         <div class="content">
-          <p>
+          <p
+            data-aos="fade-up"
+            data-aos-once="true"
+            data-aos-easing="ease-in"
+            data-aos-duration="1000"
+          >
             Edgistify bridges the broken links in your supply chain. We provide
             operations, distribution, infrastructure & consultation solutions
             based on your requirements.
           </p>
         </div>
-        <div class="stat-container">
+        <div
+          class="stat-container"
+          data-aos="fade-up"
+          data-aos-once="true"
+          data-aos-easing="ease-in"
+          data-aos-duration="1100"
+        >
           <span>15 %</span>
           <p>Reduction in logistics cost</p>
         </div>
       </div>
       <div class="content-image">
-        <div class="image-container">
+        <div
+          class="image-container"
+          data-aos="fade-up"
+          data-aos-once="true"
+          data-aos-easing="ease-in"
+          data-aos-duration="900"
+        >
           <v-img
             src="/Homepage/OurServices/our-services-thumbnail-01.png"
             width="400px"
@@ -53,21 +83,46 @@
     <div v-if="selected === 'Technology'" class="content-container">
       <div class="content-text">
         <div class="heading">
-          <h2>Technology-driven logistics solutions</h2>
+          <h2
+            data-aos="fade-up"
+            data-aos-once="true"
+            data-aos-easing="ease-in"
+            data-aos-duration="900"
+          >
+            Technology-driven logistics solutions
+          </h2>
         </div>
-        <div class="content">
+        <div
+          class="content"
+          data-aos="fade-up"
+          data-aos-once="true"
+          data-aos-easing="ease-in"
+          data-aos-duration="1000"
+        >
           <p>
             Edgistify leverages advanced technology to manage your logistics.
             Automate & Integrate your marketplaces, carriers & ERP with EdgeOS
           </p>
         </div>
-        <div class="stat-container">
+        <div
+          class="stat-container"
+          data-aos="fade-up"
+          data-aos-once="true"
+          data-aos-easing="ease-in"
+          data-aos-duration="1100"
+        >
           <span>30 %</span>
           <p>Improvement in warehouse operations</p>
         </div>
       </div>
       <div class="content-image">
-        <div class="image-container">
+        <div
+          class="image-container"
+          data-aos="fade-up"
+          data-aos-once="true"
+          data-aos-easing="ease-in"
+          data-aos-duration="900"
+        >
           <v-img
             src="/Homepage/OurServices/our-services-thumbnail-02.png"
             width="400px"
@@ -79,22 +134,46 @@
     <div v-if="selected === 'Fulfillment'" class="content-container">
       <div class="content-text">
         <div class="heading">
-          <h2>Ultra fast fulfillment services</h2>
+          <h2
+            data-aos="fade-up"
+            data-aos-once="true"
+            data-aos-easing="ease-in"
+            data-aos-duration="900"
+          >
+            Ultra fast fulfillment services
+          </h2>
         </div>
         <div class="content">
-          <p>
+          <p
+            data-aos="fade-up"
+            data-aos-once="true"
+            data-aos-easing="ease-in"
+            data-aos-duration="1000"
+          >
             Edgistify enables hyperlocal, same day & next day delivery with the
             help of robust warehousing & dark store network across all metro &
             tier 2-3 cities.
           </p>
         </div>
-        <div class="stat-container">
+        <div
+          class="stat-container"
+          data-aos="fade-up"
+          data-aos-once="true"
+          data-aos-easing="ease-in"
+          data-aos-duration="1100"
+        >
           <span>99 %</span>
           <p>TAT Accuracy</p>
         </div>
       </div>
       <div class="content-image">
-        <div class="image-container">
+        <div
+          class="image-container"
+          data-aos="fade-up"
+          data-aos-once="true"
+          data-aos-easing="ease-in"
+          data-aos-duration="900"
+        >
           <v-img
             src="/Homepage/OurServices/our-services-thumbnail-03.png"
             width="400px"
@@ -223,12 +302,14 @@
 </style>
 
 <script>
+import aosMixin from "~/mixins/aos";
 export default {
   data() {
     return {
       selected: "Logistics",
     };
   },
+  mixins: [aosMixin],
   methods: {
     toggleSelection(section) {
       if (this.selected !== section) this.selected = section;

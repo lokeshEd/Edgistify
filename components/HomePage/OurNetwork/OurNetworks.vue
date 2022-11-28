@@ -1,7 +1,12 @@
 <template>
   <div class="our-network-container">
     <div class="heading">
-      <h2>
+      <h2
+        data-aos="fade-up"
+        data-aos-once="true"
+        data-aos-easing="ease-in"
+        data-aos-duration="800"
+      >
         Expand your business with a decentralized warehousing & fulfillment
         network
       </h2>
@@ -12,56 +17,128 @@
         :class="{ selected: selected === 'Sectors' }"
         @click="() => toggleSelection('Sectors')"
       >
-        <span>Sectors</span>
+        <span
+          data-aos="fade-up"
+          data-aos-once="true"
+          data-aos-easing="ease-in"
+          data-aos-duration="800"
+          >Sectors</span
+        >
       </div>
       <div
         class="section"
         :class="{ selected: selected === 'Business Models' }"
         @click="() => toggleSelection('Business Models')"
       >
-        <span>Business Models</span>
+        <span
+          data-aos="fade-up"
+          data-aos-once="true"
+          data-aos-easing="ease-in"
+          data-aos-duration="800"
+          >Business Models</span
+        >
       </div>
     </div>
     <div v-if="selected === 'Sectors'" class="sectors-cards">
       <div class="cards-container">
-        <div class="card">
-          <div class="icon-container"></div>
+        <div
+          class="card"
+          data-aos="fade-up"
+          data-aos-once="true"
+          data-aos-easing="ease-in"
+          data-aos-duration="800"
+        >
+          <div class="icon-container e-commerce"></div>
           <div class="title">E-commerce</div>
         </div>
-        <div class="card">
-          <div class="icon-container"></div>
+        <div
+          class="card"
+          data-aos="fade-up"
+          data-aos-once="true"
+          data-aos-easing="ease-in"
+          data-aos-duration="800"
+        >
+          <div class="icon-container fmcg"></div>
           <div class="title">FMCG</div>
         </div>
-        <div class="card">
-          <div class="icon-container"></div>
-          <div class="title">E-commerce</div>
+        <div
+          class="card"
+          data-aos="fade-up"
+          data-aos-once="true"
+          data-aos-easing="ease-in"
+          data-aos-duration="800"
+        >
+          <div class="icon-container fruits-vegetables"></div>
+          <div class="title">Fruits & Vegetable</div>
         </div>
-        <div class="card">
-          <div class="icon-container"></div>
-          <div class="title">E-commerce</div>
+        <div
+          class="card"
+          data-aos="fade-up"
+          data-aos-once="true"
+          data-aos-easing="ease-in"
+          data-aos-duration="800"
+        >
+          <div class="icon-container clothing-apparels"></div>
+          <div class="title">Clothing & Apparels</div>
         </div>
       </div>
-      <div class="cards-container">
-        <div class="card">
-          <div class="icon-container"></div>
-          <div class="title">Automotive</div>
+      <div
+        class="cards-container"
+        data-aos="fade-up"
+        data-aos-once="true"
+        data-aos-easing="ease-in"
+        data-aos-duration="800"
+      >
+        <div
+          class="card"
+          data-aos="fade-up"
+          data-aos-once="true"
+          data-aos-easing="ease-in"
+          data-aos-duration="800"
+        >
+          <div class="icon-container beauty-lifestyle"></div>
+          <div class="title">Beauty & Lifestyle</div>
         </div>
-        <div class="card">
-          <div class="icon-container"></div>
-          <div class="title">E-commerce</div>
+        <div
+          class="card"
+          data-aos="fade-up"
+          data-aos-once="true"
+          data-aos-easing="ease-in"
+          data-aos-duration="800"
+        >
+          <div class="icon-container health-wellness"></div>
+          <div class="title">Health & Wellness</div>
         </div>
-        <div class="card">
-          <div class="icon-container"></div>
-          <div class="title">E-commerce</div>
+        <div
+          class="card"
+          data-aos="fade-up"
+          data-aos-once="true"
+          data-aos-easing="ease-in"
+          data-aos-duration="800"
+        >
+          <div class="icon-container home-furnishing"></div>
+          <div class="title">Home Furnishing</div>
         </div>
-        <div class="card">
-          <div class="icon-container"></div>
-          <div class="title">E-commerce</div>
+        <div
+          class="card"
+          data-aos="fade-up"
+          data-aos-once="true"
+          data-aos-easing="ease-in"
+          data-aos-duration="800"
+        >
+          <div class="icon-container automative"></div>
+          <div class="title">Automative</div>
         </div>
       </div>
     </div>
     <div v-if="selected === 'Business Models'" class="business-models-cards">
-      <div class="cards-container">
+      <div
+        class="cards-container"
+        data-aos="fade-up"
+        data-aos-once="true"
+        data-aos-easing="ease-in"
+        data-aos-duration="800"
+      >
         <div class="card-thumbnail"></div>
         <div class="card-details">
           Edgistify bridges the broken links in your supply chain. We provide
@@ -72,7 +149,13 @@
           <div class="btn"></div>
         </div>
       </div>
-      <div class="cards-container">
+      <div
+        class="cards-container"
+        data-aos="fade-up"
+        data-aos-once="true"
+        data-aos-easing="ease-in"
+        data-aos-duration="800"
+      >
         <div class="card-thumbnail"></div>
         <div class="card-details">
           Edgistify bridges the broken links in your supply chain. We provide
@@ -176,10 +259,35 @@
           align-items: center;
           justify-content: center;
           width: 100%;
-          height: 70%;
-          background-image: url("/Homepage/OurNetwork/store-icon.png");
-          background-size: 100px;
+          height: 50%;
+          // padding-top: 10px;
+          background-size: 80px;
           background-position: center;
+
+          &.e-commerce {
+            background-image: url("/Homepage/OurNetwork/e-commerce.png");
+          }
+          &.fmcg {
+            background-image: url("/Homepage/OurNetwork/fmcg.png");
+          }
+          &.fruits-vegetables {
+            background-image: url("/Homepage/OurNetwork/fruits-&-vegetables.png");
+          }
+          &.clothing-apparels {
+            background-image: url("/Homepage/OurNetwork/clothing-&-apparels.png");
+          }
+          &.beauty-lifestyle {
+            background-image: url("/Homepage/OurNetwork/beauty-&-lifestyle.png");
+          }
+          &.health-wellness {
+            background-image: url("/Homepage/OurNetwork/health-&-wellness.png");
+          }
+          &.home-furnishing {
+            background-image: url("/Homepage/OurNetwork/home-furnishing.png");
+          }
+          &.automative {
+            background-image: url("/Homepage/OurNetwork/automative.png");
+          }
         }
 
         .title {
@@ -195,12 +303,36 @@
 
         &:hover {
           background-color: #000;
+
           .icon-container {
-            background-image: url("/Homepage/OurNetwork/store-icon-focus.png");
+            &.e-commerce {
+              background-image: url("/Homepage/OurNetwork/e-commerce-dark.png");
+            }
+            &.fmcg {
+              background-image: url("/Homepage/OurNetwork/fmcg-dark.png");
+            }
+            &.fruits-vegetables {
+              background-image: url("/Homepage/OurNetwork/fruits-&-vegetables-dark.png");
+            }
+            &.clothing-apparels {
+              background-image: url("/Homepage/OurNetwork/clothing-&-apparels-dark.png");
+            }
+            &.beauty-lifestyle {
+              background-image: url("/Homepage/OurNetwork/beauty-&-lifestyle-dark.png");
+            }
+            &.health-wellness {
+              background-image: url("/Homepage/OurNetwork/health-&-wellness-dark.png");
+            }
+            &.home-furnishing {
+              background-image: url("/Homepage/OurNetwork/home-furnishing-dark.png");
+            }
+            &.automative {
+              background-image: url("/Homepage/OurNetwork/automative-dark.png");
+            }
           }
 
           .title {
-            color: #fff;
+            color: #00a699;
           }
         }
       }
@@ -234,12 +366,14 @@
 </style>
 
 <script>
+import aosMixin from "~/mixins/aos";
 export default {
   data() {
     return {
       selected: "Sectors",
     };
   },
+  mixins: [aosMixin],
   methods: {
     toggleSelection(section) {
       if (this.selected !== section) this.selected = section;

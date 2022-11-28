@@ -8,7 +8,7 @@
               data-aos="fade-up"
               data-aos-once="true"
               data-aos-easing="ease-in"
-              data-aos-duration="550"
+              data-aos-duration="800"
             >
               New Age Tech Driven<br />
               <b><span> 3PL</span> Service Provider</b>
@@ -18,10 +18,10 @@
         <div class="description-container">
           <div class="description">
             <p
-              data-aos="fade-left"
+              data-aos="fade-up"
               data-aos-once="true"
               data-aos-easing="ease-in"
-              data-aos-duration="700"
+              data-aos-duration="900"
             >
               Edgistify offers End to End supply chain and logistics solutions
               for <b>B2B</b> and <b>B2C</b> companies across different
@@ -31,7 +31,14 @@
         </div>
       </div>
       <div class="action">
-        <v-btn class="button primary">Talk to an Expert</v-btn>
+        <v-btn
+          class="button primary"
+          data-aos="fade-up"
+          data-aos-once="true"
+          data-aos-easing="ease-in"
+          data-aos-duration="1000"
+          >Talk to an Expert</v-btn
+        >
         <div class="slide-items">
           <div>
             <span> Hyperlocal Order Fulfilment</span>
@@ -133,10 +140,23 @@
         <video autoplay muted loop>
           <source src="/Homepage/Videos/video.mp4" type="video/mp4" />
         </video>
-        <div class="floating-text">
+        <div
+          class="floating-text"
+          data-aos="fade-up"
+          data-aos-once="true"
+          data-aos-easing="ease-in"
+          data-aos-duration="800"
+        >
           <span id="ft">A new age 3PL service provider</span>
         </div>
-        <v-btn class="button primary">Book your Space</v-btn>
+        <v-btn
+          class="button primary"
+          data-aos="fade-up"
+          data-aos-once="true"
+          data-aos-easing="ease-in"
+          data-aos-duration="1000"
+          >Book your Space</v-btn
+        >
       </div>
     </div>
     <TrustedBrands />

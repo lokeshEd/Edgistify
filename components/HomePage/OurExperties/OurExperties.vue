@@ -3,12 +3,21 @@
     <div class="content-container">
       <div class="left-section-container">
         <div class="heading">
-          <h2>
+          <h2
+            data-aos="fade-up"
+            data-aos-once="true"
+            data-aos-easing="ease-in"
+            data-aos-duration="800"
+          >
             Adopt a digital perspective and take control of your supply chain
           </h2>
         </div>
         <div class="sub-heading">
           <span
+            data-aos="fade-up"
+            data-aos-once="true"
+            data-aos-easing="ease-in"
+            data-aos-duration="900"
             >We streamline logistics through tech-driven solutions, a robust
             network & consultancy approach. We design, fix & execute supply
             chain & logistics processes with a suite of flexible & scalable
@@ -21,7 +30,13 @@
         </div>
       </div>
       <div class="right-section-container">
-        <div class="item-container">
+        <div
+          class="item-container"
+          data-aos="fade-up"
+          data-aos-once="true"
+          data-aos-easing="ease-in"
+          data-aos-duration="1000"
+        >
           <div class="icon-container">
             <v-img
               src="/Homepage/OurExperties/wh-network.png"
@@ -43,7 +58,13 @@
             </div>
           </div>
         </div>
-        <div class="item-container">
+        <div
+          class="item-container"
+          data-aos="fade-up"
+          data-aos-once="true"
+          data-aos-easing="ease-in"
+          data-aos-duration="1100"
+        >
           <div class="icon-container">
             <v-img
               src="/Homepage/OurExperties/tech-platform.png"
@@ -65,7 +86,13 @@
             </div>
           </div>
         </div>
-        <div class="item-container">
+        <div
+          class="item-container"
+          data-aos="fade-up"
+          data-aos-once="true"
+          data-aos-easing="ease-in"
+          data-aos-duration="1200"
+        >
           <div class="icon-container sc">
             <v-img
               src="/Homepage/OurExperties/sc.png"
@@ -87,7 +114,13 @@
             </div>
           </div>
         </div>
-        <div class="action-container">
+        <div
+          class="action-container"
+          data-aos="fade-up"
+          data-aos-once="true"
+          data-aos-easing="ease-in"
+          data-aos-duration="1300"
+        >
           <v-btn class="button primary">Talk to an Expert</v-btn>
         </div>
       </div>
@@ -269,3 +302,11 @@
   }
 }
 </style>
+
+<script>
+import aosMixin from "~/mixins/aos";
+
+export default {
+  mixins: [aosMixin],
+};
+</script>
