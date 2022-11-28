@@ -138,16 +138,12 @@
       </div>
       <div class="description-container">
         <video autoplay muted loop>
-          <source src="/Homepage/Videos/video.mp4" type="video/mp4" />
+          <source src="/Homepage/Videos/video2.mp4" type="video/mp4" />
         </video>
-        <div
-          class="floating-text"
-          data-aos="fade-up"
-          data-aos-once="true"
-          data-aos-easing="ease-in"
-          data-aos-duration="800"
-        >
-          <span id="ft">A new age 3PL service provider</span>
+        <div class="floating-text">
+          <span id="ft"
+            >Tech-driven integrated warehousing & logistics solutions</span
+          >
         </div>
         <v-btn
           class="button primary"
@@ -488,7 +484,7 @@ export default {
   methods: {
     onScroll(e) {
       if (window.top.scrollY < 400) {
-        document.querySelector("#ft").style.left = "90vw";
+        document.querySelector("#ft").style.left = "125vw";
       }
 
       if (window.top.scrollY > 400 && window.top.scrollY < 800) {
@@ -496,7 +492,7 @@ export default {
       }
 
       if (window.top.scrollY > 800) {
-        document.querySelector("#ft").style.left = "-90vw";
+        document.querySelector("#ft").style.left = "-125vw";
       }
     },
   },
