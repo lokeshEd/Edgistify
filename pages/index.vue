@@ -200,9 +200,9 @@
     background-color: #0c0c0c;
     flex-direction: column;
     padding-top: 90px;
-    background-image: url("/Homepage/background.png");
-    background-size: cover;
-    background-position-x: center;
+    // background-image: url("/Homepage/background.png");
+    // background-size: cover;
+    // background-position-x: center;
 
     .title {
       display: flex;
