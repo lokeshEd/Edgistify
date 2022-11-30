@@ -1,5 +1,6 @@
 <template>
   <div class="homepage-container">
+    <particles-bg type="cobweb" :bg="true" color="#ffffff" />
     <div class="hero-container">
       <div class="title">
         <div class="heading-container">
@@ -180,6 +181,10 @@
   background-color: #f3f3f5;
   // overflow: hidden;
 
+  .canvas {
+    z-index: 1 !important;
+  }
+
   h1 {
     font-size: 40px;
     font-weight: 700;
@@ -278,6 +283,8 @@
         text-transform: uppercase;
         position: relative;
         transition: all 0.5s ease;
+        background-color: black;
+        z-index: 2;
 
         div {
           display: inline-block;
@@ -329,6 +336,7 @@
       align-items: center;
       justify-content: center;
       background-color: #0c0c0c;
+      z-index: 2;
 
       .heading {
         display: flex;

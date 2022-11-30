@@ -23,6 +23,7 @@ export default {
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-pluginsw
   plugins: [
     // { src: '~plugins/axios.js' },
+    { src: "~plugins/particles.js", mode: "client" },
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
